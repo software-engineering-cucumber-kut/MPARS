@@ -5,7 +5,7 @@ function database($inst_type, $target)
 	mb_internal_encoding('UTF-8');
 
 	try {
-	    $pdo = new PDO('mysql:host=192.168.2.3;port=3306;dbname=MparsDB;charset=utf8mb4', 'sfen', 'sfen');
+	    $pdo = new PDO('mysql:host=127.0.0.1;port=8889;dbname=MparsDB;charset=utf8mb4', 'sfen', 'sfen');
 	} catch (PDOException $e) {
 	    header('Content-Type: text/plain; charset=UTF-8', true, 500);
 	    exit($e->getMessage());

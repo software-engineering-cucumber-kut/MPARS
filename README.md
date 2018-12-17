@@ -3,4 +3,5 @@
 チーム名：きゅうり  
 作ったファイルの確認にはMAMPが便利です．  
 MAMP > preferences > Web Server > Selectからドキュメントルートを変更できるので，
-このリポジトリのhtdocsを指定すると，htdocs以下に置いたphpファイルを確認できます．
+このリポジトリのhtdocsを指定すると，htdocs以下に置いたphpファイルを確認できます．  
+database関数はMAMPに合わせて127.0.0.1:8889にアクセスするようにしてあります．
