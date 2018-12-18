@@ -1,4 +1,7 @@
 <?php
+
+require "database.php";
+
 // タイムゾーン設定
 date_default_timezone_set('Asia/Tokyo');
 
@@ -12,15 +15,19 @@ if (isset($_GET['reviewComment'])) {
   $timestamp = time();
 }
 
+// database.phpに投げるSQL文
+database("INSERT", "INTO review VALUES (id, itemid, $reviewComment, replyid, $reviewPoint, $timestamp");
 
 // SQL文
-$sql = " INSERT INTO review VALUES (id, itemid, $reviewComment, replyid, $reviewPoint, $timestamp) ";
+/*$sql = " INSERT INTO review VALUES (id, itemid, $reviewComment, replyid, $reviewPoint, $timestamp) ";
 if ($result = $mysqli -> query($sql)) {
+
   $result -> close();
 } else {
   exit(' 送信に失敗しました ');
-}
+}*/
 // Database終了
+
 $mysqli -> close();
 
 ?>
