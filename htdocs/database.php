@@ -1,26 +1,46 @@
 <?php
 function database($inst_type, $target)
 {
-    // 言語指定
-	mb_language("ja");
-	mb_internal_encoding('UTF-8');
+    $user = 'sfen';
+    $password = 'sfen';
+    $db = 'MparsDB';
+    $host = '127.0.0.1';
+    $port = 8889;
 
-	try {
-        // mysqlに接続. 最後の二つはユーザー名，パスワード
-	    $pdo = new PDO('mysql:host=127.0.0.1;port=8889;dbname=MparsDB;charset=utf8mb4', 'sfen', 'sfen');
-	} catch (PDOException $e) {
-	    header('Content-Type: text/plain; charset=UTF-8', true, 500);
-	    exit($e->getMessage());
-	}
-    // sql文実行のための準備．パラメータを埋め込むことができる．特にその予定がないのでqueryでもいい
-	$stmt = $pdo->prepare($inst_type . $target);
+    $mysqli = new mysqli(
+        $host,
+        $user,
+        $password,
+        $db,
+        $port
+    );
 
-	$stmt->execute();
+    echo $mysqli->host_info . "\n";
+    if ($mysqli->connect_errno) {
+        echo "Failed to connect to MySQL";
+    }
 
-    // sql実行結果の各行を配列化．fetchAllでいいかも
-	while ($row = $stmt->fetch()) {
-		$array[] = $row;
-	}
-    return $array;
+    $sql = $inst_type . " " . $target;
+    $result = $mysqli->query($inst_type . " " . $target);
+
+    $returnvalue = null;
+    while ($row = $result->fetch_assoc()) {
+        $returnvalue[] = $row;
+    }
+    /*
+    switch ($inst_type) {
+    case "INSERT":
+    case "insert":
+    case "UPDATE":
+    case "update":
+    case "DELETE":
+    case "delete":
+        break;
+    default:
+    }
+     */
+
+    $mysqli->close();
+    return $returnvalue;
 }
 ?>
