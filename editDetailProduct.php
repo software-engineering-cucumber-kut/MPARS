@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="sendProducts.js"></script>
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    <title>MPARS</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MPARS</title>
+        <script type="text/javascript" src="sendProducts.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <!-- BootstrapのCSS読み込み -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery読み込み -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="js/bootstrap.min.js"></script>
+    </head>
 
 <body>
     <!-- Start your code here -->
@@ -17,7 +23,7 @@
     <img src="logo.jpg" width="125" height="70" align="top">
     <div align="right"><a href="manager.php">管理者ホームへ</a></div>
     <div class="h1">
-        <center>メニュー編集</center>
+        <center><font color="white">メニュー編集</font></center>
     </div>
     <br>
     
@@ -43,7 +49,7 @@
             <textarea id="description" placeholder="テキストを入力して下さい。(500文字以内)" maxlength="500" cols="50" rows="4" required></textarea>
         </p>
         <p>
-            <input type="submit" value="保存" onclick="Saveproduct()">
+            <button type="submit" class="btn btn-primary" onclick="Saveproduct()">保存</button>
         </p>
 
     </form>
