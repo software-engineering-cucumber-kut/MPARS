@@ -15,19 +15,14 @@ function database($inst_type, $target)
         $port
     );
 
-    echo $mysqli->host_info . "\n";
     if ($mysqli->connect_errno) {
-        echo "Failed to connect to MySQL";
+        die("Failed to connect to MySQL");
     }
 
     $sql = $inst_type . " " . $target;
-    $result = $mysqli->query($inst_type . " " . $target);
+    $result = $mysqli->query($sql);
 
     $returnvalue = null;
-    while ($row = $result->fetch_assoc()) {
-        $returnvalue[] = $row;
-    }
-    /*
     switch ($inst_type) {
     case "INSERT":
     case "insert":
@@ -35,11 +30,17 @@ function database($inst_type, $target)
     case "update":
     case "DELETE":
     case "delete":
+        if (!$result) {
+            $returnvalue = false;
+        } else {
+            $returnvalue = true;
+        }
         break;
     default:
+        while ($row = $result->fetch_assoc()) {
+            $returnvalue[] = $row;
+        }
     }
-     */
-
     $mysqli->close();
     return $returnvalue;
 }
