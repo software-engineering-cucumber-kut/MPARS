@@ -1,5 +1,5 @@
 {
-	"shopinfo.php":[
+	"shopinfo":[
 <?php
 require('database.php');
 $storeInfo = database('SELECT', '* FROM store JOIN businessday ON store.id = businessday.storeid');
