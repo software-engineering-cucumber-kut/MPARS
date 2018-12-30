@@ -28,11 +28,11 @@ $target = ' * FROM ' . $table . ' WHERE id = ' . $id . ' AND password = ' . "'" 
 
 $result = database('SELECT', $target);
 if ($result != NULL) {
-    echo "login success";
+    echo 1;
     session_start();
     $_SESSION['id'] = $id;
 } else {
-    echo "login failed";
+    echo 0;
 }
 ?>
 
