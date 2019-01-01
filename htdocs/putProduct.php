@@ -1,4 +1,5 @@
-<?php
+{
+    "success":<?php
 session_start();
 if (isset($_SESSION['id'])) {
     require('database.php');
@@ -11,6 +12,10 @@ if (isset($_SESSION['id'])) {
         $json_obj->price . ',' .
         $json_obj->storeid . ')';
     database('INSERT', $target_string);
+    echo "1";
 } else {
-    echo "missing session";
+    echo "0";
+}
+?>
+
 }
