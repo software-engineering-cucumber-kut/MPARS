@@ -1,6 +1,10 @@
 <?php
+// 最後にinsertしたときのID
+$last_insert_id = 0;
 function database($inst_type, $target)
 {
+    global $last_insert_id;
+
     $user = 'sfen';
     $password = 'sfen';
     $db = 'MparsDB';
@@ -26,6 +30,7 @@ function database($inst_type, $target)
     switch ($inst_type) {
     case "INSERT":
     case "insert":
+        $last_insert_id = $mysqli->insert_id;
     case "UPDATE":
     case "update":
     case "DELETE":
