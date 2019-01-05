@@ -4,7 +4,7 @@
 require('database.php');
 $request = database('SELECT', '* FROM request');
 //配列requestから値(contents,date)を順に取り出し$valに格納
-foreach ($request as $val) {
+foreach($request as $val) {
  echo"\t\t{\n",
         "\t\t\t" . '"contents":' . $val["contents"] . ",\n",
         "\t\t\t" . '"date":' . $val["date"] . "\n";
