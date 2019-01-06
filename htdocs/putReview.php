@@ -1,6 +1,6 @@
 {
   "success":<?php
-    require "database.php";
+    require('database.php');
 
     // タイムゾーン設定
     date_default_timezone_set('Asia/Tokyo');
@@ -37,7 +37,7 @@
 
     $mysqli -> close();
     */
-    
+
     if ($dbaccess_result) {
       echo "1";
     } else {
