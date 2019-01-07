@@ -12,11 +12,12 @@
   <br>
   <form>
     <div class="form-group">
-      <textarea class="form-control" rows="3">テキストを入力してください。</textarea>
+      <textarea id="request-text" class="form-control" rows="3" placeholder="テキストを入力してください。"></textarea>
     </div>
     <div class="mx-auto" style="width: 1vw">
-      <button type="submit" class="btn btn-default">送信</button>
+      <button type="button" class="btn btn-default" onclick="sendRequest()">送信</button>
     </div>
   </form>
 </div>
+<script type="text/javascript" src="js/sendRequest.js"></script>
 <?php require('footer.php');?>
