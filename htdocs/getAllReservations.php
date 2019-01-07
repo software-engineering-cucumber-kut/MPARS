@@ -30,5 +30,5 @@ foreach($products as $val) {
     }
 }
 ?>
-    ]
+	]
 }
