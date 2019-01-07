@@ -21,7 +21,7 @@ foreach($storeInfo as $val) {
 }
 ?>
 	],
-    "event":[
+	"event":[
 <?php
 $eventInfo = database('SELECT', '* FROM event');
 foreach($eventInfo as $val) {
@@ -37,5 +37,5 @@ foreach($eventInfo as $val) {
     }
 }
 ?>
-    ]
+	]
 }
