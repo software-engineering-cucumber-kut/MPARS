@@ -8,9 +8,8 @@
     $target_string = 'INTO reservation (id, userid, recieved, reservationtime, receiveday) VALUES (NULL, ' .  "'" . $json_obj->userid . "'" . ',' . "'" . $json_obj->received . "'" . ',' . "'" . $json_obj->reservationtime . "'" . ',' . "'" . $json_obj->receiveday . ')';
     database('INSERT', $target_string);
     echo "1";
-    } else {
     echo "0";
-    }  
+    }
   }
  ?>
 }
