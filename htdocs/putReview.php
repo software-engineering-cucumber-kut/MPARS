@@ -5,13 +5,13 @@
     // タイムゾーン設定
     date_default_timezone_set('Asia/Tokyo');
 
-    if (isset($_GET['reviewPoint'])) {
-      $reviewPoint = $_GET['reviewPoint'];
+    if (isset($_POST['reviewPoint'])) {
+      $reviewPoint = $_POST['reviewPoint'];
     }
 
     // 入力されたコメントと受信時刻を取得
-    if (isset($_GET['reviewComment'])) {
-      $reviewComment = $_GET['reviewComment'];
+    if (isset($_POST['reviewComment'])) {
+      $reviewComment = $_POST['reviewComment'];
       $timestamp = time();
     }
 
