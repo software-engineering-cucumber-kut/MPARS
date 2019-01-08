@@ -1,4 +1,4 @@
-// 画像ファイルが選択されたとき
+// 画像ファイルが選択されたとき選択した画像の表示  
 function previewFile() {
     // idがnoimageの要素の取得
     var preview = document.getElementById('photo');
@@ -22,7 +22,7 @@ function previewFile() {
     }
 }
 
-// 保存ボタンを押したとき
+// 保存ボタンを押したとき入力したデータの保存
 function Saveproduct() {
     // 画像ファイルの取得
     var myimg = document.getElementById('photo');
@@ -47,98 +47,8 @@ function Saveproduct() {
 // localstorageに保存したデータをAjaxでPHPに送信する
 
 
+// 削除ボタンを押したとき選択した商品情報の削除
+function Deleteproduct() {
+    
+}
 
-/*<input type="file" name="photo" accept="image/*" required>
-    <br>
-    <br>>
-    <!-- 初期画像 -->
-<div style="width: 500px">
-    <img src="noimage.jpg" width="100" height="100" id="noimage">
-        </div>
-
-<!-- サムネイル表示領域 -->
-    <canvas id="canvas" width="0" height="0"></canvas>
-
-<!-- javascript -->
-<script type="text/javascript">
-    $(function() {
-    var file = null; // 選択されるファイル
-    var blob = null; // 画像(BLOBデータ)
-    const THUMBNAIL_WIDTH = 100; // 画像リサイズ後の横の長さの最大値
-    const THUMBNAIL_HEIGHT = 100; // 画像リサイズ後の縦の長さの最大値
-
-    // ファイルが選択されたら発動
-    $('input[type=file]').change(function() {
-
-        var a = document.getElementById("noimage");
-        // idのnoimageが存在した場合
-        if (a != null) {
-            var noimage = document.getElementById("noimage");
-            noimage.parentNode.removeChild(noimage);
-        }
-
-        //$(this)=$('input[type=file]')
-        // prop()でfilesプロパティの取得.[0]は最初のファイル.[1]とすると2個目のファイル指定ができる.
-        //選択したファイルを取得し変数に格納
-        file = $(this).prop('files')[0];
-        // 選択されたファイルが画像かどうか判定
-        if (file.type != 'image/jpeg' && file.type != 'image/png') {
-            // 画像でない場合は終了
-            file = null;
-            blob = null;
-            return;
-        }
-
-        // 画像をリサイズする
-        var image = new Image();
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            image.onload = function() {
-            var width, height;
-                            if (image.width > image.height) {
-                                // 横長の画像は横のサイズを指定値にあわせる
-                                var ratio = image.height / image.width;
-                                width = THUMBNAIL_WIDTH;
-                                height = THUMBNAIL_WIDTH * ratio;
-                            } else {
-                                // 縦長の画像は縦のサイズを指定値にあわせる
-                                var ratio = image.width / image.height;
-                                width = THUMBNAIL_HEIGHT * ratio;
-                                height = THUMBNAIL_HEIGHT;
-                            }
-                            // サムネ描画用canvasのサイズを上で算出した値に変更
-                            var canvas = $('#canvas')
-                            .attr('width', width)
-                            .attr('height', height);
-                            var ctx = canvas[0].getContext('2d');
-
-                            // canvasに既に描画されている画像をクリア
-                            ctx.clearRect(0, 0, width, height);
-                            // canvasにサムネイルを描画
-                            ctx.drawImage(image, 0, 0, image.width, image.height, 0, 0, width, height);
-
-                            // canvasからbase64画像データを取得
-                            var base64 = canvas.get(0).toDataURL('image/jpeg');
-                            // base64からBlobデータを作成
-                            var barr, bin, i, len;
-                            bin = atob(base64.split('base64,')[1]);
-                            len = bin.length;
-                            barr = new Uint8Array(len);
-                            i = 0;
-                            while (i < len) {
-                                barr[i] = bin.charCodeAt(i);
-                                i++;
-                            }
-                            blob = new Blob([barr], {
-                                type: 'image/jpeg'
-                            });
-                            console.log(blob);
-                        }
-                        image.src = e.target.result;
-                    }
-                    reader.readAsDataURL(file);
-                });
-
-            });
-
-        </script>*/
