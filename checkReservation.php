@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MPARS</title>
+    <!--jsとcssの読み込み-->
     <script type="text/javascript" src="checkReservation.js"></script>
+    <script type="text/javascript" src="sendReserveProducts.js"></script>
     <link rel="stylesheet" type="text/css" href="checkReservation.css">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
