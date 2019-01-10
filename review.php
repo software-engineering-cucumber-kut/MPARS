@@ -25,10 +25,6 @@
     <!-- Start your code here -->
 
     <!-- header.phpを読み込む -->
-    <?php
-    include("header.php");
-    ?>
-    
     <table>
         <tr>
             <td>Evaluation&Review</td>
@@ -100,9 +96,9 @@
 
     <div id="dialog2" style="display:none;">
         <p>どのSNSに共有しますか?</p>
-        <a href="https://twitter.com/?lang=ja"><img src="Twitter%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg" alt="twitter" height="100" width="100"></a>
-        <a href="https://ja-jp.facebook.com/"><img src="facebook.jpg" alt="facebook" height="90" width="90"></a>
-        <a href="https://line.me/ja/"><img src="LINE.jpg" alt="LINE" height="100" width="100"></a>
+        <a href="https://twitter.com/?lang=ja" target="_blank"><img src="Twitter%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg" alt="twitter" height="100" width="100"></a>
+        <a href="https://ja-jp.facebook.com/" target="_blank"><img src="facebook.jpg" alt="facebook" height="90" width="90"></a>
+        <a href="https://line.me/ja/" target="_blank"><img src="LINE.jpg" alt="LINE" height="100" width="100"></a>
     </div>
 
     <!-- レビューリスト -->
