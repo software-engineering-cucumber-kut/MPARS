@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MPARS</title>
+    <!--jsとcssの読み込み-->
     <script type="text/javascript" src="managementReservation.js"></script>
     <link rel="stylesheet" type="text/css" href="managementReservation.css">
+    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -26,23 +28,6 @@
       </center>
     </div>
     <br>
-    <!--<img src="logo.jpg" width="125" height="70" align="top">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="text-right col-lg-2"><button type="button" class="btn btn-primary" onclick="back1()">　戻る　</button></
-        <div class="text-right col-lg-2"><button type="button" class="btn btn-primary" onclick="back2()">ログアウト</button>
-      </div>
-    </div>
-    <br>
-    <div class="h1">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12" style="background-color:orange;"><center><font color="white">予約済内容</font></center>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>-->
 
     <!--<div align="right"><button type="button" class="btn btn-primary" id="delete">予約取消</button></div>-->
 
