@@ -1,0 +1,27 @@
+.h1{
+  background: blue;
+}
+
+.businessAndPlace {
+  float: left;
+}
+
+.businessHour {
+  display:block;
+}
+
+.place{
+  display:block;
+}
+
+.map{
+  float: left;
+}
+
+.sns{
+  float: left;
+}
+
+.twitter-timeline{
+  float: left;
+}
