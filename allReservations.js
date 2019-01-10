@@ -24,8 +24,17 @@ function makeTable(data, tableId){
 window.onload = function(){
 // 表のデータ
 var data = [["予約日", "受取日時", "予約内容", "学籍番号またはID", "詳細情報"],
-             [1, 2, 3, 4, 5]];
+            [1,2,3,4,5]];
 
 // 表の動的作成
 makeTable(data,"table");
 };
+//$.ajax({
+  //type:'GET',
+  //url:'http://localhost:8888/db/menulist.php'
+  //datatype:'json'
+//}).done(makeTable);
+
+function back1(){
+    window.location.href = "manager.php"; // ページ遷移
+}
