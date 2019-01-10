@@ -37,26 +37,35 @@
         </div>
       </div>
     </div>
-
-    <center><font size="5"><div id="table"></div></font></center>
-
-    <!--<table border="2" width="700" align="center">
-    <tr bgcolor="#d2691e" align="center">
+<!--
+  <center><font size="5"><div id="table" style="border: solid"></div></font></center>
+-->
+<br>
+<br>
+    <table border="2" width="700" align="center">
+    <tr bgcolor="orange" align="center">
       <td>予約日</td>
       <td>受取日時</td>
       <td>予約内容</td>
       <td>学籍番号<br>またはID</td>
       <td>詳細情報</td>
     </tr>
-    <tr bgcolor="#d2691e" align="center">
-      <td>2-1</td>
-      <td>2-2</td>
-      <td>2-3</td>
-      <td>2-4</td>
-      <td>2-5</td>
+    <tr bgcolor="white" align="center">
+      <td>2018/11/07</td>
+      <td>2018/11/08 <br>12:00</td>
+      <td>クリームパン 2個</td>
+      <td>1200xxx</td>
+      <td>詳細情報</td>
+    </tr>
+    <tr bgcolor="white" align="center">
+      <td>2018/12/14</td>
+      <td>2018/12/15 <br>13:20</td>
+      <td>マカロン 4個</td>
+      <td>1200xxx</td>
+      <td>詳細情報</td>
     </tr>
     </table>
     </div>
-  -->
+
   </body>
 </html>
