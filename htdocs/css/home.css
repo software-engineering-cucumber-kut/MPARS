@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.h3 {
+    background-color: dimgray;
+    color: white;
+    padding: 0.3em;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.space-side {
+    margin: 0 20;
+}
