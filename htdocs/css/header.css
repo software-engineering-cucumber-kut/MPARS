@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.header-img img {
+    width: calc(100%/3);
+}
+.logo-img {
+    width: 25%;
+}
+.menu {
+    font-size: 30px;
+}
+.menu-japan {
+    font-size: 15px;
+}
+.nav-item {
+    line-height: 70%;
+}
+#navbarSupportedContent {
+    justify-content: right;
+}
+
+.navbar {
+    margin-bottom: 50px;
+}
