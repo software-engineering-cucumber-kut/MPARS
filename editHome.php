@@ -22,26 +22,48 @@
     </center>
   </div>
   <br>
-
-<div class="firstInfo">
-  <div class="businessAndPlace">
-    <!-- 営業時間 -->
-    <div class="businessHour">
-      <p>営業時間</P>
-      <textarea></textarea>
+<div class="body">
+  <div class="firstInfo">
+    <div class="businessAndPlace">
+      <!-- 営業時間 -->
+      <div class="businessHour">
+        <p>営業時間</P>
+        <textarea rows="3" cols="40"></textarea>
+      </div>
+      <!-- 場所 -->
+      <div class="place">
+        <p>場所</p>
+        <textarea rows="2" cols="40"></textarea>
+      </div>
     </div>
-    <!-- 場所 -->
-    <div class="place">
-      <p>場所</p>
-      <textarea></textarea>
+    <div class="map">
+      <img src="map.svg" width="200" height="200" align="top">
+    </div>
+    <div class="sns">
+      <a class="twitter-timeline" width="200" height="200" align="right" href="https://twitter.com/MiyanokuchiT?ref_src=twsrc%5Etfw">Tweets by MiyanokuchiT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
-  <div class="map">
-    <img src="map.svg" width="200" height="200" align="top">
-
+  <div class="secondInfo">
+    <div class="eventInfo">
+      <p>EVENT INFOS</p>
+      <textarea rows="8" cols="60"></textarea>
+    </div>
+    <div class="outsidePhoto">
+      <img src="outside.svg" width="200" height="200" align="top">
+    </div>
   </div>
-  <div class="sns">
-    <a class="twitter-timeline" width="200" height="200" align="right" href="https://twitter.com/MiyanokuchiT?ref_src=twsrc%5Etfw">Tweets by MiyanokuchiT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class="thirdInfo">
+    <div class="contactInfos">
+      <p>CONTACT INFOS</p>
+      <textarea rows="5" cols="50"></textarea>
+    </div>
+    <div class="calendar">
+    </div>
+  </div>
+  <div class="button_wrapper">
+    <center>
+    <input type="button" value="保存" class="submit" onclick="compEditHome()" />
+    </center>
   </div>
 </div>
 </body>
