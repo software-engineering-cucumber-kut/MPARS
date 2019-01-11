@@ -40,13 +40,13 @@
       <img src="map.svg" width="200" height="200" align="top">
     </div>
     <div class="sns">
-      <a class="twitter-timeline" width="200" height="200" align="right" href="https://twitter.com/MiyanokuchiT?ref_src=twsrc%5Etfw">Tweets by MiyanokuchiT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a class="twitter-timeline" width="300" height="200" align="right" href="https://twitter.com/MiyanokuchiT?ref_src=twsrc%5Etfw">Tweets by MiyanokuchiT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
   <div class="secondInfo">
     <div class="eventInfo">
       <p>EVENT INFOS</p>
-      <textarea rows="8" cols="60"></textarea>
+      <textarea rows="10" cols="80"></textarea>
     </div>
     <div class="outsidePhoto">
       <img src="outside.svg" width="200" height="200" align="top">
@@ -55,7 +55,7 @@
   <div class="thirdInfo">
     <div class="contactInfos">
       <p>CONTACT INFOS</p>
-      <textarea rows="5" cols="50"></textarea>
+      <textarea rows="8" cols="60"></textarea>
     </div>
     <div class="calendar">
     </div>
