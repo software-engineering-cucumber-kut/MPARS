@@ -15,7 +15,7 @@
       <textarea id="request-text" class="form-control" rows="3" placeholder="テキストを入力してください。"></textarea>
     </div>
     <div class="mx-auto" style="width: 1vw">
-      <button type="button" class="btn btn-default" onclick="sendRequest()">送信</button>
+      <button type="button" class="btn btn-primary" onclick="sendRequest()">送信</button>
     </div>
   </form>
 </div>

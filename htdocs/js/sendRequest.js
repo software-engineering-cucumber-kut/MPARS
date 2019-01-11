@@ -4,9 +4,13 @@ const sendRequest = () => {
     
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:8888/putRequest.php',
+        url: 'http://localhost:8888/stub/putRequest.php',
         datatype: 'json'
     }).done((res) => {
-        console.log(res);
+        if (JSON.parse(res).success) {
+            location.href = "http://localhost:8888/compRequest.php";
+        } else {
+            console.log("Success!");
+        }
     });
 };
