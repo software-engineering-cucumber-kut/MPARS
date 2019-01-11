@@ -26,6 +26,7 @@ foreach($storeInfo as $val) {
 $eventInfo = database('SELECT', '* FROM event');
 foreach($eventInfo as $val) {
     echo"\t\t{\n",
+        "\t\t\t" . '"storeid":' . $val["storeid"] . ",\n",
         "\t\t\t" . '"isopen":' . $val["isopen"] . ",\n",
         "\t\t\t" . '"date":' . $val["date"] . ",\n",
         "\t\t\t" . '"open":' . $val["open"] . ",\n",
