@@ -2,6 +2,13 @@
   background: blue;
 }
 
+.body{
+}
+
+.firstInfo{
+  display: block;
+}
+
 .businessAndPlace {
   float: left;
 }
@@ -24,4 +31,43 @@
 
 .twitter-timeline{
   float: left;
+}
+
+.secondInfo{
+  display: block;
+  clear: both;
+}
+
+.eventInfo{
+  float: left;
+}
+
+.outsidePhoto{
+  float left;
+}
+
+.thirdInfo{
+  display: block;
+  clear: both;
+}
+
+.contactInfos{
+  float: left;
+}
+
+.calendar{
+  float: left;
+}
+
+.button_wrapper{
+   text-align: center;
+}
+
+.submit{
+  display: block;
+  clear: both;
+  border-radius : 10%;
+  border: 1px solid #0B0B61;
+  color: white;
+  background: blue;
 }
