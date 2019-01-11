@@ -3,9 +3,13 @@
 }
 
 .body{
+  max-width: 800px;
+  margin: auto;
 }
 
 .firstInfo{
+  width: 100%;
+  background: red;
   display: block;
 }
 
@@ -14,10 +18,12 @@
 }
 
 .businessHour {
+  margin: 10px;
   display:block;
 }
 
 .place{
+  margin: 10px;
   display:block;
 }
 
@@ -34,11 +40,13 @@
 }
 
 .secondInfo{
+  width: 100%;
   display: block;
   clear: both;
 }
 
 .eventInfo{
+  margin: 10px;
   float: left;
 }
 
@@ -47,11 +55,13 @@
 }
 
 .thirdInfo{
+  width: 100%;
   display: block;
   clear: both;
 }
 
 .contactInfos{
+  margin: 10px;
   float: left;
 }
 
