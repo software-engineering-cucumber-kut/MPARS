@@ -6,13 +6,13 @@ $storeInfo = database('SELECT', '* FROM store JOIN businessday ON store.id = bus
 // DBアクセス結果をforeachで取り出す
 foreach($storeInfo as $val) {
     echo"\t\t{\n",
-        "\t\t\t" . '"name":' . $val["name"] . ",\n",
-        "\t\t\t" . '"color":' . $val["color"] . ",\n",
-        "\t\t\t" . '"phonenumber":' . $val["phonenumber"] . ",\n",
-        "\t\t\t" . '"address":' . $val["address"] . ",\n",
-        "\t\t\t" . '"businessday":' . $val["businessday"] . ",\n",
-        "\t\t\t" . '"open":' . $val["open"] . ",\n",
-        "\t\t\t" . '"close":' . $val["close"] . "\n";
+        "\t\t\t" . '"name":"' . $val["name"] . "\",\n",
+        "\t\t\t" . '"color":"' . $val["color"] . "\",\n",
+        "\t\t\t" . '"phonenumber":"' . $val["phonenumber"] . "\",\n",
+        "\t\t\t" . '"address":"' . $val["address"] . "\",\n",
+        "\t\t\t" . '"businessday":"' . $val["businessday"] . "\",\n",
+        "\t\t\t" . '"open":"' . $val["open"] . "\",\n",
+        "\t\t\t" . '"close":"' . $val["close"] . "\"\n";
     if ($val == end($storeInfo)) {
         print("\t\t}\n");
     } else {
@@ -23,14 +23,14 @@ foreach($storeInfo as $val) {
 	],
 	"event":[
 <?php
-$eventInfo = database('SELECT', '* FROM event');
+$eventInfo = database('SELECT', '* FROM event JOIN store ON storeid = store.id');
 foreach($eventInfo as $val) {
     echo"\t\t{\n",
-        "\t\t\t" . '"storeid":' . $val["storeid"] . ",\n",
+        "\t\t\t" . '"storename":"' . $val["name"] . "\",\n",
         "\t\t\t" . '"isopen":' . $val["isopen"] . ",\n",
-        "\t\t\t" . '"date":' . $val["date"] . ",\n",
-        "\t\t\t" . '"open":' . $val["open"] . ",\n",
-        "\t\t\t" . '"close":' . $val["close"] . "\n";
+        "\t\t\t" . '"date":"' . $val["date"] . "\",\n",
+        "\t\t\t" . '"open":"' . $val["open"] . "\",\n",
+        "\t\t\t" . '"close":"' . $val["close"] . "\"\n";
     if ($val == end($eventInfo)) {
         print("\t\t}\n");
     } else {
