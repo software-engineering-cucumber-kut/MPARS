@@ -1,8 +1,6 @@
 <link href="css/footer.css" rel="stylesheet">
-<footer class="footer mt-auto py-3">
-    <div class="container text-center">
-        <p class="text-muted" id="footer-text">MPARS</p>
-    </div>
+<footer class="footer">
+    <div class="text-muted text-center" id="footer-text">MPARS</div>
 </footer>
 <!-- bootstrap，popperのjsファイル読み込み -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
