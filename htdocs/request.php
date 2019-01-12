@@ -14,7 +14,7 @@
     <div class="form-group">
       <textarea id="request-text" class="form-control" rows="3" placeholder="テキストを入力してください。"></textarea>
     </div>
-    <div class="mx-auto" style="width: 1vw">
+    <div class="text-center">
       <button type="button" class="btn btn-primary" onclick="sendRequest()">送信</button>
     </div>
   </form>
