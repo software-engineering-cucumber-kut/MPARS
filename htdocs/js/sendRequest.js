@@ -3,14 +3,15 @@ const sendRequest = () => {
     let sending_string = JSON.stringify(request_json);
     
     $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: 'http://localhost:8888/stub/putRequest.php',
-        datatype: 'json'
+        datatype: 'json',
+        data: sending_string
     }).done((res) => {
         if (JSON.parse(res).success) {
             location.href = "http://localhost:8888/compRequest.php";
         } else {
-            console.log("Success!");
+            console.log("request sending failed");
         }
     });
 };
