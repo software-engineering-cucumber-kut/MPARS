@@ -29,6 +29,7 @@
       crossorigin="anonymous"></script>
   <link rel="stylesheet" href="editHome.css">
   <script type="text/javascript" src="/htdocs/js/getHomeInfo.js"></script>
+  <script type="text/javascript" src="/htdocs/js/sendEditHome.js"></script>
 </head>
 
 <body>
@@ -104,7 +105,7 @@
   </div>
   <div class="button_wrapper">
     <center>
-    <input type="button" value="保存" class="submit" onclick="compEditHome()" />
+    <input type="button" value="保存" class="submit" onclick="sendEditHome()" />
     </center>
   </div>
 </div>
