@@ -1,13 +1,13 @@
-.h1{
-  background: blue;
+.h1 {
+  background: #8EB8FF;
 }
 
-.body{
+.body {
   max-width: 800px;
   margin: auto;
 }
 
-.firstInfo{
+.firstInfo {
   width: 100%;
   background: red;
   display: block;
@@ -22,58 +22,74 @@
   display:block;
 }
 
-.place{
+.businessHourBackground {
+  background-color: gray;
+}
+
+.place {
   margin: 10px;
   display:block;
 }
 
-.map{
+.placeBackground {
+  background-color: gray;
+}
+
+.map {
   float: left;
 }
 
-.sns{
+.sns {
   float: left;
 }
 
-.twitter-timeline{
+.twitter-timeline {
   float: left;
 }
 
-.secondInfo{
+.secondInfo {
   width: 100%;
   display: block;
   clear: both;
 }
 
-.eventInfo{
+.eventInfo {
   margin: 10px;
   float: left;
 }
 
-.outsidePhoto{
+.eventInfoBackground {
+  background-color: gray;
+}
+
+.outsidePhoto {
   float left;
 }
 
-.thirdInfo{
+.thirdInfo {
   width: 100%;
   display: block;
   clear: both;
 }
 
-.contactInfos{
+.contactInfos {
   margin: 10px;
   float: left;
 }
 
-.calendar{
+.contactInfoBackground {
+  background-color: gray;
+}
+
+.calendar {
   float: left;
 }
 
-.button_wrapper{
+.button_wrapper {
    text-align: center;
 }
 
-.submit{
+.submit {
   display: block;
   clear: both;
   border-radius : 10%;
