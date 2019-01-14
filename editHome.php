@@ -28,6 +28,7 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
   <link rel="stylesheet" href="editHome.css">
+  <script type="text/javascript" src="/htdocs/js/getHomeInfo.js"></script>
 </head>
 
 <body>
