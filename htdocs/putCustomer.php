@@ -1,30 +1,42 @@
 {
-  "success":
+  "success:"
   <?php
-  //session_start();
-  //if (isset($_SESSION['id'])) {
-    require('database.php');
+    // session_start();
+    // if (isset($_SESSION['id'])) {
+    // require('database.php');
     // global $last_insert_id;
-    $json_string = file_get_contents('php://input');
-    $json_obj = json_decode($json_string);
+    // $json_string = file_get_contents('php://input');
+    // $json_obj = json_decode($json_string);
 
     // 学生と一般を分ける
-    /*
-    $student = $json_obj->studentuser;
-    $general = $json_obj->generaluser;
-    */
-    $typeOfUser = $json_obj->type;
-    //if ($student != NULL) {
-    if ($typeOfUser == 1)
+    student(); // Test
+    // general(); // Test
+
+    function student() {
       // 学生アカウント
+      require('database.php');
+      $json_string = file_get_contents('php://input');
+      $json_obj = json_decode($json_string);
+
       $target_string = 'INTO studentuser (id, name, phonenumber, password) VALUES (' .
       $json_obj->id . ',' .
-      "'"$json_obj->name . "'" . ',' .
-      $json_obj->phonenumber . ',' .
+      "'" . $json_obj->name . "'" . ',' .
+      "'" . $json_obj->phonenumber . "'" . ',' .
       "'" . $json_obj->password . "');";
       $dbaccess_result = database('INSERT', $target_string);
-    } else {
+      if ($dbaccess_result) {
+        echo "1";
+      } else {
+        echo "0";
+      }
+    }
+
+    function general() {
       // 一般アカウント
+      require('database.php');
+      $json_string = file_get_contents('php://input');
+      $json_obj = json_decode($json_string);
+
       $target_string = 'INTO generaluser (id, name, phonenumber, password, address, birthday, mail) VALUES (' .
       $json_obj->id . ',' .
       "'" . $json_obj->name . "'" . ',' .
@@ -32,15 +44,20 @@
       "'" . $json_obj->password . "'". ',' .
       "'" . $json_obj->address . "'" . ',' .
       "'" . $json_obj->birthday . "'" . ',' .
-      "'" . $json_obj->mail ."');";
+      "'" . $json_obj->mail . "');";
       $dbaccess_result = database('INSERT', $target_string);
+      if ($dbaccess_result) {
+        echo "1";
+      } else {
+        echo "0";
+      }
     }
-  //}
-  // Test
-  if ($dbaccess_result) {
-    echo "1";
-  } else {
-    echo "0";
-  }
+
+    // Test
+    if ($dbaccess_result) {
+      echo "1";
+    } else {
+      echo "0";
+    }
  ?>
 }
