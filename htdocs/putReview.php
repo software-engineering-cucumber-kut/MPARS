@@ -1,6 +1,6 @@
-  {
-    "success:"
-<?php
+{
+  "success:"
+  <?php
     require('database.php');
 
     // タイムゾーン設定
