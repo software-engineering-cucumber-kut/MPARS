@@ -64,20 +64,20 @@
     <br><br><br>
     <div  class="row">
         <div align = "right" class="col-sm-5">
-        <b style="font-size:50px;">  氏名：</b>
+        <b style="font-size:50px;">  学生ID(学籍番号)：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;">
+        <input type="text" id="Userid" size="15" maxlength="10" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
     </div>
     <br><br><br>
     <div  class="row">
         <div align = "right" class="col-sm-5">
-        <b style="font-size:50px;">  学籍番号：</b>
+        <b style="font-size:50px;">  氏名：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;">
+        <input type="text" id="name" size="15" maxlength="15" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -87,7 +87,7 @@
         <b style="font-size:50px;">  電話番号：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;">
+        <input type="text" id="phonenumber" size="15" maxlength="11" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -97,7 +97,7 @@
         <b style="font-size:50px;"> パスワード：</b>
         </div>
         <div class="col-sm-6">
-        <input type="password" id="password" size="15" maxlength="8" style="font-size:50px;">
+        <input type="password" id="password" size="15" maxlength="10" style="font-size:50px;">
         <input type="checkbox" id="password-check">
         </div>
         <div align = "left" class="col-sm-1">
@@ -107,7 +107,7 @@
     <br><br>
     <div  class="row">
         <div align = "center" class="col-sm-12">
-        <input type="button" class="addGeneral_btn" value="学生用アカウント情報登録" style="font-size:30px;" onclick="location.href='./loginCustomer.php'">
+        <input type="button" class="addGeneral_btn" name="student" value="学生用アカウント情報登録" style="font-size:30px;" onclick="location.href='./loginCustomer.php'">
         </div>
     </div>
 
@@ -121,10 +121,52 @@
     <br><br><br>
     <div  class="row">
         <div align = "right" class="col-sm-5">
+        <b style="font-size:50px;">  ユーザID：</b>
+        </div>
+        <div align = "left" class="col-sm-6">
+        <input type="text" id="Userid" size="15" maxlength="10" style="font-size:50px;">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <br><br><br>
+    <div  class="row">
+        <div align = "right" class="col-sm-5" id="name">
         <b style="font-size:50px;">  氏名：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;">
+        <input type="text" id="name" size="15" maxlength="15" style="font-size:50px;">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <br><br><br>
+    <div  class="row">
+        <div align = "right" class="col-sm-5">
+        <b style="font-size:50px;">  電話番号：</b>
+        </div>
+        <div align = "left" class="col-sm-6">
+        <input type="text" id="phonenumber" size="15" maxlength="11" style="font-size:50px;">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <br><br><br>
+    <div  class="row">
+        <div align = "right" class="col-sm-5">
+        <b style="font-size:50px;"> パスワード：</b>
+        </div>
+        <div class="col-sm-6">
+        <input type="password" id="password2" size="15" maxlength="10" style="font-size:50px;">
+        <input type="checkbox" id="password-check2">
+        </div>
+        <div align = "left" class="col-sm-1">
+        </div>
+    </div>
+    <br><br><br>
+    <div  class="row">
+        <div align = "right" class="col-sm-5">
+        <b style="font-size:50px;">  住所：</b>
+        </div>
+        <div align = "left" class="col-sm-6">
+        <input type="text" id="address" size="15" maxlength="30" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -134,60 +176,25 @@
         <b style="font-size:50px;"> 生年月日：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;" placeholder="1997年3月25日">
+        <input type="text" id="birthday" size="15" maxlength="15" style="font-size:50px;" placeholder="1997年3月25日">
         </div>
         <div class="col-sm-1"></div>
     </div>
-    <br><br><br>
-    <div  class="row">
-        <div align = "right" class="col-sm-5">
-        <b style="font-size:50px;">  住所：</b>
-        </div>
-        <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;">
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
-
     <br><br><br>
     <div  class="row">
         <div align = "right" class="col-sm-5">
         <b style="font-size:50px;">  メールアドレス：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;">
+        <input type="text" id="mail" size="15" maxlength="45" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
-    </div>
-
-    <br><br><br>
-    <div  class="row">
-        <div align = "right" class="col-sm-5">
-        <b style="font-size:50px;">  電話番号：</b>
-        </div>
-        <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="10" style="font-size:50px;">
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
-
-    <br><br><br>
-    <div  class="row">
-        <div align = "right" class="col-sm-5">
-        <b style="font-size:50px;"> パスワード：</b>
-        </div>
-        <div class="col-sm-6">
-        <input type="password" id="password2" size="15" maxlength="8" style="font-size:50px;">
-        <input type="checkbox" id="password-check2">
-        </div>
-        <div align = "left" class="col-sm-1">
-        </div>
     </div>
 
    <br><br>
     <div  class="row">
         <div align = "center" class="col-sm-12">
-        <input type="button" class="addGeneral_btn" value="一般用アカウント情報登録" style="font-size:30px;" onclick="location.href='./loginCustomer.php'">
+        <input type="button" class="addGeneral_btn" name ="general" value="一般用アカウント情報登録" style="font-size:30px;" onclick="location.href='./loginCustomer.php'">
         </div>
     </div>
 
