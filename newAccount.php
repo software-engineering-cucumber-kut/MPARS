@@ -113,6 +113,7 @@
         </div>
     </div>
 
+    <br><br><br><br>
 <!--一般アカウント作成-->
     <br><br>
     <div class = "row">
