@@ -67,7 +67,7 @@
         <b style="font-size:50px;">  学生ID(学籍番号)：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="Userid" size="15" maxlength="10" style="font-size:50px;">
+        <input type="text" id="sUserid" size="15" maxlength="10" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -77,7 +77,7 @@
         <b style="font-size:50px;">  氏名：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="15" maxlength="15" style="font-size:50px;">
+        <input type="text" id="sname" size="15" maxlength="15" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -87,7 +87,7 @@
         <b style="font-size:50px;">  電話番号：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="phonenumber" size="15" maxlength="11" style="font-size:50px;">
+        <input type="text" id="sphonenumber" size="15" maxlength="11" style="font-size:50px;">
         </div>
         <div class="col-sm-1"></div>
     </div>
