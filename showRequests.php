@@ -40,21 +40,29 @@
     </div>
     </div>
 
+    <br>
     <div>
         2018/10/8/ 12:30 <br>
         エビを使ったパンが欲しいです。<br>
     </div>
-    <br><br>
+    <br>
+    <div class = "row">
+    <div class="col-sm-12" style="background-color:black">
+    </div>
+    </div>
+
+    <br>
     <div>
         2018/10/13/ 17:30<br>
         お金が欲しいです。万年金欠でパンも買えません。<br>
     </div>
-    <br><br>
+
+    <br>
     <div>
         2018/11/10/ 5:30<br>
         ピザみたいなパンが欲しいです。お菓子の種類をもっと増やして欲しいです。<br>
     </div>
-    <br><br>
+    <br>
 
 </div>
 </body>

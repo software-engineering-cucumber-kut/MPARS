@@ -43,35 +43,47 @@
 
     <br><br><br><br>
     <div  class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-5"> 
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5 ,size"> 
         <a href="#" class="square_btn" onclick="location.href='./allReservations.php'" >予約一覧</a>    
         </div>
+        <div class="col-sm-5"></div>
+    </div>
+
+    <br>
+    <div  class="row">
+        <div class="col-sm-6"></div>
         <div class="col-sm-5">
         <a href="#" class="square_btn" onclick="location.href='./stock.php'">在庫編集</a>  
         </div>
+        <div class="col-sm-1"></div>
     </div>
 
-    <br><br><br>
+    <br>
     <div  class="row">
-        <div class="col-sm-1"></div>
+        <div class="col-sm-2"></div>
         <div class="col-sm-5"> 
         <a href="#" class="square_btn" onclick="location.href='./editProducts.php'">メニュー編集</a>    
         </div>
+        <div class="col-sm-5"></div>
+    </div>
+
+    <br>
+    <div  class="row">
+        <div class="col-sm-6"></div>
         <div class="col-sm-5">
         <a href="#" class="square_btn" onclick="location.href='./showRequests.php'">リクエスト一覧</a>  
         </div>
+        <div class="col-sm-1"></div>
     </div>
 
-    <br><br><br>
+    <br>
     <div  class="row">
-        <div class="col-sm-1"></div>
+        <div class="col-sm-2"></div>
         <div class="col-sm-5"> 
         <a href="#" class="square_btn" onclick="location.href='./editHome.php'">店舗情報編集</a>    
         </div>
-        <div class="col-sm-5">
-        <a href="#" class="square_btn" onclick="location.href='./menu-manager.php'">レビュー閲覧・返信</a>  
-        </div>
+        <div class="col-sm-5"></div>
     </div>
 
 </div>
