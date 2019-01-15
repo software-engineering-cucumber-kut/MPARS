@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="newAccount.js"></script>
 
 </head>
 <body>
@@ -107,10 +108,10 @@
     <br><br>
     <div  class="row">
         <div align = "center" class="col-sm-12">
+        <!-- 本番はこっち　onclick="newAccount()"-->
         <input type="button" class="addGeneral_btn" name="student" value="学生用アカウント情報登録" style="font-size:30px;" onclick="location.href='./loginCustomer.php'">
         </div>
     </div>
-
 
 <!--一般アカウント作成-->
     <br><br>
@@ -194,6 +195,7 @@
    <br><br>
     <div  class="row">
         <div align = "center" class="col-sm-12">
+           <!-- 本番はこっち　onclick="newAccount()"-->
         <input type="button" class="addGeneral_btn" name ="general" value="一般用アカウント情報登録" style="font-size:30px;" onclick="location.href='./loginCustomer.php'">
         </div>
     </div>

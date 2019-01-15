@@ -3,8 +3,8 @@
 
 
 const newAccount = () => {
+    
     if($_POST['student']){
-        isstudent = 1;
         let newAccount_json = { 
             isstudent: 1,
             id: $('#sUserid').val() ,
