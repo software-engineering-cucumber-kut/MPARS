@@ -57,7 +57,7 @@
         <b style="font-size:50px;"> パスワード：</b>
         </div>
         <div class="col-sm-6">
-        <input type="password" id="password" size="10" maxlength="8" style="font-size:50px;">
+        <input type="password" id="password" size="10" maxlength="10" style="font-size:50px;">
         <input type="checkbox" id="password-check">
         </div>
         <div align = "left" class="col-sm-2">
