@@ -4,7 +4,7 @@ const sendRequest = () => {
     
     $.ajax({
         type: 'POST',
-        url: 'http://localhost:8888/stub/putRequest.php',
+        url: '/stub/putRequest.php',
         datatype: 'json',
         data: sending_string
     }).done((res) => {
