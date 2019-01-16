@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/header.css">
     </head>
 <body>
+<div id="wrapper">
 <!-- global menu -->
 <div class="d-flex flex-row">
 <div class="header-img"><img src="img/photo.jpg"><img src="img/photo.jpg"><img src="img/photo.jpg"></div>

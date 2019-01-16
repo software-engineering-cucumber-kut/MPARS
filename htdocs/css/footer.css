@@ -2,5 +2,14 @@
     background-color: black;
     padding: 1rem 0;
     border-top: solid;
-    margin-top: 60px;
+}
+
+body, #wrapper {
+    display: flex
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
 }
