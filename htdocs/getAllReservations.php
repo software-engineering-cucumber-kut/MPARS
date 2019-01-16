@@ -16,13 +16,13 @@ foreach($products as $val) {
 
     echo"\t\t{\n",
         "\t\t\t" . '"received":' . $val["received"] . ",\n",
-        "\t\t\t" . '"reseavationtime":' . $val["reseavationtime"] . ",\n",
-        "\t\t\t" . '"receiveday":' . $val["receiveday"] . ",\n",
+        "\t\t\t" . '"reservationtime":"' . $val["reservationtime"] . "\",\n",
+        "\t\t\t" . '"receiveday":"' . $val["receiveday"] . "\",\n",
         "\t\t\t" . '"reservationid":' . $val["reservationid"] . ",\n",
         "\t\t\t" . '"amount":' . $val["amount"] . ",\n",
-        "\t\t\t" . '"phonenumber":' . $userdata["phonenumber"]. ",\n",
-        "\t\t\t" . '"mail":' . $userdata["mail"] . ",\n",
-        "\t\t\t" . '"address":' . $userdata["address"] . "\n";
+        "\t\t\t" . '"phonenumber":"' . $userdata["phonenumber"]. "\",\n",
+        "\t\t\t" . '"mail":"' . $userdata["mail"] . "\",\n",
+        "\t\t\t" . '"address":"' . $userdata["address"] . "\"\n";
     if ($val == end($products)) {
         print("\t\t}\n");
     } else {

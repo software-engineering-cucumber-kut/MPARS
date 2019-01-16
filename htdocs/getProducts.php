@@ -20,13 +20,13 @@ foreach($products as $val) {
 //    echo var_dump($storename);
     echo"\t\t{\n",
         "\t\t\t" . '"id":' . $val["id"] . ",\n",
-        "\t\t\t" . '"name":' . $val["name"] . ",\n",
-        "\t\t\t" . '"photo":' . $val["photo"] . ",\n",
-        "\t\t\t" . '"description":' . $val["description"] . ",\n",
+        "\t\t\t" . '"name":"' . $val["name"] . "\",\n",
+        "\t\t\t" . '"photo":"' . $val["photo"] . "\",\n",
+        "\t\t\t" . '"description":"' . $val["description"] . "\",\n",
         "\t\t\t" . '"price":' . $val["price"] . ",\n",
         "\t\t\t" . '"evaluation":' . $evaluation . ",\n",
         "\t\t\t" . '"storeid":' . $val["storeid"] . ",\n",
-        "\t\t\t" . '"storename":' . $storename . "\n";
+        "\t\t\t" . '"storename":"' . $storename . "\"\n";
     if ($val == end($products)) {
         print("\t\t}\n");
     } else {
