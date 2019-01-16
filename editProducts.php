@@ -42,7 +42,7 @@
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="noimage.jpg" alt="カードの画像">
         <div class="card-body">
-            <h3 class="card-title" align="left">サンドイッチ</h3>
+            <span style="float:right;">点</span><span style="float:right;">2</span><h3 class="card-title" align="left">サンドイッチ</h3>
             <p class="card-text">具だくさんでボリュームがあります♪</p>
             <span style="float:right;">250</span><span style="float:right;">￥</span>
             <a href="editDetailProduct.php" class="btn btn-primary" onclick="Editproduct()">編集</a>
@@ -69,7 +69,6 @@
         <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
         <hr color="#000000" size="1">
     </div>
-
     <!-- End your code here -->
 </body>
 
