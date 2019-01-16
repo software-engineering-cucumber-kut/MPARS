@@ -9,7 +9,7 @@ const sendRequest = () => {
         data: sending_string
     }).done((res) => {
         if (JSON.parse(res).success) {
-            location.href = "http://localhost:8888/compRequest.php";
+            location.href = "/compRequest.php";
         } else {
             console.log("request sending failed");
         }
