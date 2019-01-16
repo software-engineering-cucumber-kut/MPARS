@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MPARS</title>
-        <script type="text/javascript" src="getProducts.js"></script>
-        <script type="text/javascript" src="sendProducts.js"></script>
+        <!--<script type="text/javascript" src="getProducts.js"></script>-->
+        <script type="text/javascript" src="sendProduct.js"></script>
         <!--<script type="text/javascript" src="getProducts.js"></script>-->
         <link rel="stylesheet" type="text/css" href="menu.css">
         <!-- BootstrapのCSS読み込み -->
@@ -30,7 +30,7 @@
         <br>
 
         <!-- 画像ファイルの選択 -->
-        <form enctype="multipart/form-data"  action="editProducts.php" method="post" name="info">
+        <form action="editProducts.php" method="post" name="info">
             <input type="file" id="select_photo" accept="image/*" onchange="previewFile()" required>
             <br>
             <br>
@@ -44,7 +44,7 @@
             </p>
             <p>
                 <label>値段:</label><br>
-                <input type="text" id="price" placeholder="250" required>
+                <input type="number" id="price" placeholder="250" required>
                 ￥
             </p>
             <p>
@@ -52,7 +52,7 @@
                 <textarea id="description" placeholder="テキストを入力して下さい。(500文字以内)" maxlength="500" cols="50" rows="4" required></textarea>
             </p>
             <p>
-                <input type="submit" value="保存" class="btn btn-primary" onclick="Saveproduct()" />&emsp;<input type="button" value="削除" class="btn btn-primary" onclick="Deleteproduct" />
+                <input type="submit" value="保存" class="btn btn-primary" onclick="Saveproduct()" />&emsp;<input type="button" value="削除" class="btn btn-primary" onclick="Deleteproduct()" />
             </p>
 
         </form>
