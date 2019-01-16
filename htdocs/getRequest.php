@@ -1,5 +1,5 @@
 {
-    “request”: [
+    "request": [
 <?php
 require('database.php');
 $request = database('SELECT', '* FROM request');
