@@ -16,7 +16,6 @@
   <script src="js/bootstrap.min.js"></script>
 </head>
   <body>
-    <body>
       <img src="logo.jpg" width="125" height="70" align="top">
       <div align="right"><a href="manager.php">管理者ホームへ</a></div>
       <div class="h1">
@@ -25,9 +24,6 @@
         </center>
       </div>
       <br>
-<!--
-  <center><font size="5"><div id="table" style="border: solid"></div></font></center>
--->
 <br>
 <br>
     <table border="2" width="700" align="center">
@@ -43,14 +39,14 @@
       <td>2018/11/08 <br>12:00</td>
       <td>クリームパン 2個</td>
       <td>1200xxx</td>
-      <td>詳細情報</td>
+      <td><a href="allReservations2.php">詳細情報</td>
     </tr>
     <tr bgcolor="white" align="center">
       <td>2018/12/14</td>
       <td>2018/12/15 <br>13:20</td>
       <td>マカロン 4個</td>
       <td>1200xxx</td>
-      <td>詳細情報</td>
+      <td><a href="allReservations2.php">詳細情報</td>
     </tr>
     </table>
     </div>
