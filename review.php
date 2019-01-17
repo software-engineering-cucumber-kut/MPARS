@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MPARS</title>
-    <script type="text/javascript" src="getReviews.js"></script>
+    <script type="text/javascript" src="a_getReviews.js"></script>
     <link rel="stylesheet" type="text/css" href="menu.css">
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
