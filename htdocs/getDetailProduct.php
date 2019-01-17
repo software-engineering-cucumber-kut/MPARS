@@ -36,7 +36,7 @@
       ],
       "allReview":[
   <?php
-  require('database.php');
+  require_once('database.php');
   $reviewContents = database('SELECT', '* FROM review');
   foreach($reviewContents as $val) {
     $target = ' contents FROM review';
