@@ -8,7 +8,7 @@
   <title>MPARS</title>
   <!--jsとcssの読み込み-->
   <script type="text/javascript" src="allReservations.js"></script>
-  <script type="text/javascript" src="getAllReservation.js"></script>
+  <script type="text/javascript" src="getAllReservations.js"></script>
   <link rel="stylesheet" type="text/css" href="allReservations.css">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,9 @@
       <br>
 <br>
 <br>
-    <table border="2" width="700" align="center">
+<div id ="table"></div>
+
+<!--    <table ="2" width="700" align="center">
     <tr bgcolor="orange" align="center">
       <td>予約日</td>
       <td>受取日時</td>
@@ -50,6 +52,6 @@
     </tr>
     </table>
     </div>
-
+-->
   </body>
 </html>
