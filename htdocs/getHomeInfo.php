@@ -2,7 +2,7 @@
 	"shopinfo":[
 <?php
 require('database.php');
-$storeInfo = database('SELECT', '* FROM store JOIN businessday ON store.id = businessday.storeid');
+$storeInfo = database('SELECT', ' * FROM store JOIN businessday ON store.id = businessday.id');
 // DBアクセス結果をforeachで取り出す
 foreach($storeInfo as $val) {
     echo"\t\t{\n",
