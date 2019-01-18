@@ -27,7 +27,7 @@
 
         <div class="col-sm-8"></div>
         <div align = "right" class="col-sm-2">
-        <a href="manage.php" style="font-size:30px;" onclick="location.href='./manager.php'">管理者メニューへ</a>
+        <a href="manager.php" style="font-size:30px;" onclick="location.href='./manager.php'">管理者メニューへ</a>
         </div>
         <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">-->
     </div>
