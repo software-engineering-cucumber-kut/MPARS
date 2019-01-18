@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MPARS</title>
   <!--jsとcssの読み込み-->
-  <script type="text/javascript" src="allReservations.js"></script>
-  <script type="text/javascript" src="getAllReservations.js"></script>
+  <!--<script type="text/javascript" src="allReservations.js"></script>-->
+
+
   <link rel="stylesheet" type="text/css" href="allReservations.css">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,15 +29,21 @@
 <br>
 <div id ="table"></div>
 
-<!--    <table ="2" width="700" align="center">
-    <tr bgcolor="orange" align="center">
+<!--<table ="2" width="700">
+    <tr bgcolor="orange">
       <td>予約日</td>
       <td>受取日時</td>
       <td>予約内容</td>
       <td>学籍番号<br>またはID</td>
       <td>詳細情報</td>
     </tr>
-    <tr bgcolor="white" align="center">
+  </table>
+-->
+  <div id="AllReservations"></div>
+<!--<div class="res">
+<div align="center" id="AllReservations"></div></div>
+-->
+<!--    <tr bgcolor="white" align="center">
       <td>2018/11/07</td>
       <td>2018/11/08 <br>12:00</td>
       <td>クリームパン 2個</td>
@@ -53,5 +60,9 @@
     </table>
     </div>
 -->
+<script type="text/javascript" src="getAllReservations.js"></script>
+<script type="text/javascript">
+  getAllReservation();
+</script>
   </body>
 </html>
