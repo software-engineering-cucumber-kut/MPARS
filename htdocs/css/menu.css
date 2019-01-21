@@ -1,0 +1,21 @@
+.bread {
+    line-height: 1%; /*Bread menuの下に線を引く*/
+}
+
+.sweet {
+    line-height: 1%; /*Sweet menuの下に線を引く*/
+}
+
+.drink {
+    line-height: 1%; /*Drink menuの下に線を引く*/
+}
+
+/*メニュー編集の帯の部分*/
+.h1 {
+    color: white;
+    font-size: 20px;/*文字サイズ*/
+    background: skyblue;/*背景色*/
+    padding: 0.5em;/*文字まわり（上下左右）の余白*/
+}
+
+

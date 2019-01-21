@@ -1,0 +1,15 @@
+.footer {
+    background-color: black;
+    padding: 1rem 0;
+    border-top: solid;
+}
+
+body, #wrapper {
+    display: flex
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}

@@ -1,0 +1,38 @@
+.card {
+    margin: 20px; /*指定要素の全四方(上下左右)のマージン領域の設定*/
+    width: 200px; /*領域の幅*/
+    /*background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px #ccc;*/
+}
+.card-img {
+    /*border-radius: 5px 5px 0 0;*/
+    max-width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 20px;
+}
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.card-text {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.card-link {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 20px;
+}
+.card-link a {
+    text-decoration: none;
+    color: #0bd;
+    margin: 0 10px;
+}
+.card-link a:hover {
+    color: #0090aa;
+}

@@ -1,0 +1,99 @@
+.h1 {
+  background: #8EB8FF;
+}
+
+.body {
+  max-width: 800px;
+  margin: auto;
+}
+
+.firstInfo {
+  width: 100%;
+  background: red;
+  display: block;
+}
+
+.businessAndPlace {
+  float: left;
+}
+
+.businessHour {
+  margin: 10px;
+  display:block;
+}
+
+.businessHourBackground {
+  background-color: gray;
+}
+
+.place {
+  margin: 10px;
+  display:block;
+}
+
+.placeBackground {
+  background-color: gray;
+}
+
+.map {
+  float: left;
+}
+
+.sns {
+  float: left;
+}
+
+.twitter-timeline {
+  float: left;
+}
+
+.secondInfo {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.eventInfo {
+  margin: 10px;
+  float: left;
+}
+
+.eventInfoBackground {
+  background-color: gray;
+}
+
+.outsidePhoto {
+  float left;
+}
+
+.thirdInfo {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.contactInfos {
+  margin: 10px;
+  float: left;
+}
+
+.contactInfoBackground {
+  background-color: gray;
+}
+
+.calendar {
+  float: left;
+}
+
+.button_wrapper {
+   text-align: center;
+}
+
+.submit {
+  display: block;
+  clear: both;
+  border-radius : 10%;
+  border: 1px solid #0B0B61;
+  color: white;
+  background: blue;
+}
