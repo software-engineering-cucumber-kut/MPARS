@@ -2,7 +2,11 @@
 	"shopinfo":[
 <?php
 require('database.php');
-$storeInfo = database('SELECT', ' * FROM store JOIN businessday ON store.id = businessday.id');
+$storeInfo = database('SELECT', ' * FROM store JOIN businessday ON store.id = businessday.storeid');
+
+// 最後の行だけ処理を変える
+$counter_var = 0;
+$storeInfo_length = count($storeInfo);
 // DBアクセス結果をforeachで取り出す
 foreach($storeInfo as $val) {
     echo"\t\t{\n",
@@ -13,7 +17,8 @@ foreach($storeInfo as $val) {
         "\t\t\t" . '"businessday":"' . $val["businessday"] . "\",\n",
         "\t\t\t" . '"open":"' . $val["open"] . "\",\n",
         "\t\t\t" . '"close":"' . $val["close"] . "\"\n";
-    if ($val == end($storeInfo)) {
+    $counter_var++;
+    if ($counter_var == $storeInfo_length) {
         print("\t\t}\n");
     } else {
         print("\t\t},\n");
@@ -24,6 +29,8 @@ foreach($storeInfo as $val) {
 	"event":[
 <?php
 $eventInfo = database('SELECT', '* FROM event JOIN store ON storeid = store.id');
+$counter_var = 0;
+$eventInfo_length = count($eventInfo);
 foreach($eventInfo as $val) {
     echo"\t\t{\n",
         "\t\t\t" . '"storename":"' . $val["name"] . "\",\n",
@@ -31,7 +38,8 @@ foreach($eventInfo as $val) {
         "\t\t\t" . '"date":"' . $val["date"] . "\",\n",
         "\t\t\t" . '"open":"' . $val["open"] . "\",\n",
         "\t\t\t" . '"close":"' . $val["close"] . "\"\n";
-    if ($val == end($eventInfo)) {
+    $counter_var++;
+    if ($counter_var === $eventInfo_length) {
         print("\t\t}\n");
     } else {
         print("\t\t},\n");
