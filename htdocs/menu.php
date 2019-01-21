@@ -1,38 +1,36 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="a_getProducts.js"></script>
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    <title>MPARS</title>
-</head>
-
-<body>
-    <!-- Start your code here -->
-    
-    <!-- header.phpを読み込む -->
-    
-    
-    <!-- 商品一覧 -->
-    <div class="bread">
-        <p>Bread menu</p>
-        <p><font size="1">パン</font></p>
-        <hr color="#000000" size="1">
+<?php require('header.php');?>
+<!-- body -->
+<div class="container-fluid">
+    <br>
+    <div class="row text-left">
+        <div class="col-md-12">
+            <h4>Bread</h4>
+            <hr>
+        </div>
     </div>
-    <div class="sweet">
-        <p>Sweet menu</p>
-        <p><font size="1">お菓子</font></p>
-        <hr color="#000000" size="1">
+    <br>
+    <div class="row" id="breads">
     </div>
-    <div class="drink">
-        <p>Drink menu</p>
-        <p><font size="1">飲み物</font></p>
-        <hr color="#000000" size="1">
+    <br>
+    <div class="row text-left">
+        <div class="col-md-12">
+            <h4>Sweets</h4>
+            <hr>
+        </div>
     </div>
-
-
-    <!-- End your code here -->
-</body>
-
-</html>
+    <br>
+    <div class="row" id="sweets">
+    </div>
+    <br>
+    <div class="row text-left">
+        <div class="col-md-12">
+            <h4>Drink</h4>
+            <hr>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="drinks">
+    </div>
+</div>
+<script src="js/getProducts.js" type="text/javascript"></script>
+<?php require('footer.php');?>

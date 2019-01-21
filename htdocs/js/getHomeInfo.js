@@ -2,7 +2,7 @@
 const getHomeInfo = () => {
     $.ajax({
         type: 'GET',
-        url: '/stub/getHomeInfo.php',
+        url: '/data/getHomeInfo.php',
         datatype: 'json'
     }).done((res) => {
 //        console.log(res);
