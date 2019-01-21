@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MPARS</title>
   <!--jsとcssの読み込み-->
-  <script type="text/javascript" src="allReservations.js"></script>
+  <script type="text/javascript" src="a_allReservations.js"></script>
 
 
   <link rel="stylesheet" type="text/css" href="allReservations.css">
