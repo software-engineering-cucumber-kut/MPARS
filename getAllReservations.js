@@ -1,4 +1,3 @@
-
 // JavaScript Document
 const getAllReservation = () => {
     $.ajax({
@@ -17,16 +16,33 @@ const addAllReservation = (data) => {
     // イベント情報をホーム画面に追加
     $.each(reservations, (index, val) => {
         // 追加する文字列
-        var card = val.reservationtime +
-            val.receiveday +
-            val.amount +
-            val.reservationid +
-            "詳細情報";
+        var card = val.reservationtime + '  ' +
+            val.receiveday + '  ' +
+            val.amount + '  ' +
+            val.reservationid + '  ' +
+            '<input type="button" value="詳細情報" onclick="clickBtn2()" /><div id="p2">' +
+            val.phonenumber + '  ' +
+            val.mail + '  ' +
+            val.address + '  ' +
+            '</div>';
 
         $('#AllReservations').append(card);
     });
-
 };
+
+document.getElementById("p2").style.visibility = "hidden";
+
+function clickBtn2(){
+	const p2 = document.getElementById("p2");
+
+	if(p2.style.visibility=="visible"){
+		// hiddenで非表示
+		p2.style.visibility ="hidden";
+	}else{
+		// visibleで表示
+		p2.style.visibility ="visible";
+	}
+}
 
 // 表の動的作成
 function makeTable(data, tableId){
