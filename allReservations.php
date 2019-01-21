@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MPARS</title>
   <!--jsとcssの読み込み-->
-  <!--<script type="text/javascript" src="allReservations.js"></script>-->
+  <script type="text/javascript" src="allReservations.js"></script>
 
 
   <link rel="stylesheet" type="text/css" href="allReservations.css">
@@ -25,44 +25,15 @@
         </center>
       </div>
       <br>
-<br>
-<br>
-<div id ="table"></div>
+      <br>
+      <center>
+      <div id ="table"></div>
+      <div id ="AllReservations"></div>
+      </center>
 
-<!--<table ="2" width="700">
-    <tr bgcolor="orange">
-      <td>予約日</td>
-      <td>受取日時</td>
-      <td>予約内容</td>
-      <td>学籍番号<br>またはID</td>
-      <td>詳細情報</td>
-    </tr>
-  </table>
--->
-  <div id="AllReservations"></div>
-<!--<div class="res">
-<div align="center" id="AllReservations"></div></div>
--->
-<!--    <tr bgcolor="white" align="center">
-      <td>2018/11/07</td>
-      <td>2018/11/08 <br>12:00</td>
-      <td>クリームパン 2個</td>
-      <td>1200xxx</td>
-      <td><a href="allReservations2.php">詳細情報</td>
-    </tr>
-    <tr bgcolor="white" align="center">
-      <td>2018/12/14</td>
-      <td>2018/12/15 <br>13:20</td>
-      <td>マカロン 4個</td>
-      <td>1200xxx</td>
-      <td><a href="allReservations2.php">詳細情報</td>
-    </tr>
-    </table>
-    </div>
--->
-<script type="text/javascript" src="getAllReservations.js"></script>
-<script type="text/javascript">
-  getAllReservation();
-</script>
+      <script type="text/javascript" src="getAllReservations.js"></script>
+      <script type="text/javascript">
+        getAllReservation();
+      </script>
   </body>
 </html>
