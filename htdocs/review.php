@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MPARS</title>
-    <script type="text/javascript" src="a_getReviews.js"></script>
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- jQuery UIの読み込み -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
-</head>
-
-<body>
     <!-- Start your code here -->
 
     <!-- header.phpを読み込む -->
+<?php
+require('header.php');
+?>
+    <script type="text/javascript" src="js/a_getReviews.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
 
 
     <table>
@@ -130,6 +112,6 @@
 
 
     <!-- End your code here -->
-</body>
-
-</html>
+<?php
+require('footer.php');
+?>
