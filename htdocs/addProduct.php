@@ -23,10 +23,10 @@
     <!--header部分-->
     <img src="img/logo.jpg" width="125" height="70" align="top">
     <div align="right"><a href="manager.php" style="font-size:20px;">管理者ホームへ</a></div>
-    <div class="h1">
-        <center>
-            <font color="white">メニュー編集</font>
-        </center>
+    <div class="row">
+        <div align = "center" class="col-sm-12" style="background-color:#8EB8FF;">
+            <h2> <font color="white" face="ＭＳ 明朝" style="font-size:50px;">メニュー編集</font> </h2>
+        </div>
     </div>
     <br>
 
@@ -64,4 +64,4 @@
 
 </html>
 
-<!--<div id="b"></div>-->
+<div id="b"></div>

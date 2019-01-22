@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MPARS</title>
-    <script type="text/javascript" src="a_getProducts.js"></script>
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    <link rel="stylesheet" type="text/css" href="editProducts.css">
+    <script type="text/javascript" src="js/a_getProducts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/editProducts.css">
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery読み込み -->
@@ -21,53 +21,58 @@
     <!-- Start your code here -->
 
     <!--header部分-->
-    <img src="logo.jpg" width="125" height="70" align="top">
+    <img src="img/logo.jpg" width="125" height="70" align="top">
     <div align="right"><a href="manager.php">管理者ホームへ</a></div>
-    <div class="h1">
-        <center>
-            <font color="white">メニュー編集</font>
-        </center>
+    <div class="row">
+        <div align = "center" class="col-sm-12" style="background-color:#8EB8FF;">
+            <h2> <font color="white" face="ＭＳ 明朝" style="font-size:50px;">メニュー編集</font> </h2>
+        </div>
     </div>
     <br>
 
-    <!-- パンメニュー -->
-    <div class="bread">
-        <p>Bread menu</p>
-        <p>
-            <font size="1">パン</font>
-        </p>
-        <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
-        <hr color="#000000" size="1">
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="noimage.jpg" alt="カードの画像">
-        <div class="card-body">
-            <span style="float:right;">点</span><span style="float:right;">2</span><h3 class="card-title" align="left">サンドイッチ</h3>
-            <p class="card-text">具だくさんでボリュームがあります♪</p>
-            <span style="float:right;">250</span><span style="float:right;">￥</span>
-            <a href="editDetailProduct.php" class="btn btn-primary" onclick="Editproduct()">編集</a>
+    <div class="container-fluid">
+        <br>
+        <div class="row text-left">
+            <div class="col-md-12">
+                <h4>Bread</h4>
+                <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
+                <hr>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/noimage.jpg" alt="カードの画像">
+                    <div class="card-body">
+                        <span style="float:right;">点</span><span style="float:right;">2</span><h3 class="card-title" align="left">サンドイッチ</h3>
+                        <p class="card-text">具だくさんでボリュームがあります♪</p>
+                        <span style="float:right;">250</span><span style="float:right;">￥</span>
+                        <a href="editDetailProduct.php" class="btn btn-primary" onclick="Editproduct()">編集</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-
-    <!-- お菓子メニュー -->
-    <div class="sweet">
-        <p>Sweet menu</p>
-        <p>
-            <font size="1">お菓子</font>
-        </p>
-        <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
-        <hr color="#000000" size="1">
-    </div>
-
-    <!-- 飲み物メニュー -->
-    <div class="drink">
-        <p>Drink menu</p>
-        <p>
-            <font size="1">飲み物</font>
-        </p>
-        <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
-        <hr color="#000000" size="1">
+        <br>
+        <div class="row" id="breads">
+        </div>
+        <br>
+        <div class="row text-left">
+            <div class="col-md-12">
+                <h4>Sweets</h4>
+                <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
+                <hr>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="sweets">
+        </div>
+        <br>
+        <div class="row text-left">
+            <div class="col-md-12">
+                <h4>Drink</h4>
+                <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
+                <hr>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="drinks">
+        </div>
     </div>
     <!-- End your code here -->
 </body>
