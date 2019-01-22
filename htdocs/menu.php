@@ -1,4 +1,5 @@
 <?php require('header.php');?>
+<link rel="stylesheet" type="text/css" href="css/menu.css">
 <!-- body -->
 <div class="container-fluid">
     <br>
