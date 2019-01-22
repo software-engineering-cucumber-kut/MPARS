@@ -1,4 +1,47 @@
-<?php require('header.php');?>
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MPARS</title>
+
+        <!-- Bootstrapのための各種cssファイル読み込み -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+        <!-- jQueryのjsファイル読み込み -->
+        <script
+              src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="/js/sendEditHome.js"></script>
+        <script type="text/javascript" src="/js/getHomeInfo.js"></script>
+        <link rel="stylesheet" href="css/header.css">
+        <style type="text/css">
+          textarea{
+            width:100%;
+            height:30%;
+          }
+        </style>
+    </head>
+<body>
+<div id="wrapper">
+<!-- global menu -->
+<div class="d-flex flex-row">
+<div class="header-img">
+  <img src="img/logo.jpg">
+</div>
+</div>
+<div align="right"><a href="manager.php">管理者ホームへ</a></div>
+
+<hr>
+
+<main>
+
+
 <link href="css/editHome.css" rel="stylesheet">
 <!-- body -->
 <div class="navbar-content">
@@ -9,17 +52,17 @@
                     <div class="space-side">
                         <div class="h3">BUSINESS DAY</div>
                         <p id="business-day-body">
-                            <textarea></textarea>
+                            <textarea name="bysinessday-textarea"></textarea>
                         </p>
 
                         <div class="h3">LOCATION</div>
                         <p>
-                            <textarea></textarea>
+                            <textarea name="location-textarea"></textarea>
                         </p>
                         <div class="h3">EVENT INFOMATION</div>
                         <p>
                             <div id="event-info-body">
-                              <textarea></textarea>
+                            <textarea name="event-info-textarea"></textarea>
                                 <!--
                                 <div class="card">
                                     <div class="card-header"> 臨時開店のお知らせ </div>
@@ -35,7 +78,7 @@
                         <div class="h3">CONTACT INFO</div>
                         <p>
                             <div id="contact-info-body">
-                              <textarea></textarea>
+                              <textarea name="contact-textarea"></textarea>
                                 <!--
                                 <div class="card">
                                     <div class="card-header"> ほげ shop </div>
@@ -88,8 +131,8 @@
         </div>
     </div>
 </div>
-<p class="btn_upload">
-  <input type="submit" value="保存" class="btn btn-primary" onclick="SaveHome()" />
+<p class="btn_upload"><a　href="home.php">
+  <input type="submit" value="保存" class="btn btn-primary" onclick="sendEditHome()" /></a>
 </p>
     <!--<script type="text/javascript" src="js/getHomeInfo.js"></script>
     <script type="text/javascript">

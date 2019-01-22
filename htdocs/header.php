@@ -34,7 +34,7 @@
         <span class="menu-japan">商品一覧</span></a> </li>
       <li class="nav-item"> <a class="nav-link" href="/request.php">Request<br/>
         <span class="menu-japan">ご要望</span></a> </li>
-      <li class="nav-item"> <a class="nav-link" href="/reservation.php">Reservation<br/>
+      <li class="nav-item"> <a class="nav-link" href="/Reservation.html">Reservation<br/>
         <span class="menu-japan">ご予約</span></a> </li>
     </ul>
   </div>

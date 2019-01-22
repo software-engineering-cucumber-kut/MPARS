@@ -65,10 +65,14 @@
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <br/>
 
                     <h2>Map</h2>
-                    <img src="img/map.png" width="100%">
+                    <img src="img/map.png" width="100%"><br/>
 
                     <h2>Photos</h2>
-                    <img src="img/outside.jpg" width="100%">
+                    <img src="img/outside.jpg" width="100%"><br/>
+
+                    <div class="text-center">
+                        <a href="loginManager.html">管理者ログイン</a><br/>
+                    </div>
                 </div>
             </div>
         </div>

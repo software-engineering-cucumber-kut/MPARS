@@ -1,33 +1,3 @@
-
-// JavaScript Document
-const getAllReservation = () => {
-    $.ajax({
-        type: 'GET',
-        url:  'http://localhost:80/stub/getAllReservations.php',
-        datatype: 'json'
-    }).done((res) => {
-//        console.log(res);
-        addAllReservation(JSON.parse(res));
-    });
-};
-
-const addAllReservation = (data) => {
-    let reservations = data.reservation;
-
-    // イベント情報をホーム画面に追加
-    $.each(reservations, (index, val) => {
-        // 追加する文字列
-        var card = val.reservationtime +
-            val.receiveday +
-            val.amount +
-            val.reservationid +
-            "詳細情報";
-
-        $('#AllReservations').append(card);
-    });
-
-};
-
 // 表の動的作成
 function makeTable(data, tableId){
     // 表の作成開始
@@ -58,3 +28,7 @@ var data = [["予約日", "受取日時", "予約内容", "学籍番号または
 // 表の動的作成
 makeTable(data,"table");
 };
+
+function back1(){
+    window.location.href = "manager.php"; // ページ遷移
+}
