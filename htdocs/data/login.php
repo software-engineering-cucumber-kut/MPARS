@@ -24,12 +24,12 @@ case 'manager':
     break;
 }
 
-if ($table == 'owner') {
-    // ユーザの存在を確認するためのSQLの一部
-    $target = ' id FROM ' . $table . ' WHERE id = ' . $id . ' AND password = ' . "'" . $password . "'";
-} else {
+if ($table == 'generaluser') {
     // ユーザの存在を確認するためのSQLの一部
     $target = ' id FROM ' . $table . " WHERE name = '" . $name . "' AND password = " . "'" . $password . "'";
+} else {
+    // ユーザの存在を確認するためのSQLの一部
+    $target = ' id FROM ' . $table . ' WHERE id = ' . $id . ' AND password = ' . "'" . $password . "'";
 }
 
 $result = database('SELECT', $target);
