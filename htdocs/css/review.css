@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.starrate {
+    color: rgba(241,209,22,1.00);
+}
