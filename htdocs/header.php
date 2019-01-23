@@ -23,7 +23,13 @@
     </head>
 <body>
 <div id="wrapper">
+
 <!-- global menu -->
+<script type="text/javascript">
+const openReservationWithNewTab = () => {
+    window.open("/loginCustomer.php");
+};
+</script>
 <div class="d-flex flex-row">
 <div class="header-img"><img src="img/photo.jpg"><img src="img/photo.jpg"><img src="img/photo.jpg"></div>
 </div>
@@ -37,8 +43,8 @@
         <span class="menu-japan">商品一覧</span></a> </li>
       <li class="nav-item"> <a class="nav-link" href="/request.php">Request<br/>
         <span class="menu-japan">ご要望</span></a> </li>
-      <li class="nav-item"> <a class="nav-link" href="/loginCustomer.php">Reservation<br/>
-        <span class="menu-japan">ご予約</span></a> </li>
+      <li class="nav-item"> <div id="reservation-header-button" class="nav-link" onClick="openReservationWithNewTab();">Reservation<br/>
+        <span class="menu-japan">ご予約</span></div> </li>
     </ul>
   </div>
 </nav>
