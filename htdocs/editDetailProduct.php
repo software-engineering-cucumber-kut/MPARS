@@ -6,9 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MPARS</title>
-        <script type="text/javascript" src="a_sendProduct.js"></script>
+        <script type="text/javascript" src="js/a_sendProduct.js"></script>
         <!--<script type="text/javascript" src="getProducts.js"></script>-->
-        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
         <!-- BootstrapのCSS読み込み -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- jQuery読み込み -->
@@ -21,7 +21,7 @@
         <!-- Start your code here -->
 
         <!--header部分-->
-        <img src="logo.jpg" width="125" height="70" align="top">
+        <img src="img/logo.jpg" width="125" height="70" align="top">
         <div align="right"><a href="manager.php">管理者ホームへ</a></div>
         <div class="h1">
             <center><font color="white">メニュー編集</font></center>
