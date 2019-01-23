@@ -12,7 +12,7 @@
   <br>
   <form>
     <div class="form-group">
-      <textarea id="request-text" class="form-control" rows="3" placeholder="テキストを入力してください。"></textarea>
+      <textarea id="request-text" class="form-control" placeholder="テキストを入力してください。"></textarea>
     </div>
     <div class="text-center">
       <button type="button" class="btn btn-primary" onclick="sendRequest()">送信</button>
@@ -20,4 +20,5 @@
   </form>
 </div>
 <script type="text/javascript" src="js/sendRequest.js"></script>
+<link rel="stylesheet" type="text/css" href="css/request.css">
 <?php require('footer.php');?>
