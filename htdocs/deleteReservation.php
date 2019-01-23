@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MPARS</title>
-        <script type="text/javascript" src="deleteReservation.js"></script>
-        <link rel="stylesheet" type="text/css" href="deleteReservation.css">
+        <script type="text/javascript" src="js/deleteReservation.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/deleteReservation.css">
         <!-- BootstrapのCSS読み込み -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- jQuery読み込み -->

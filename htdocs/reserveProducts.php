@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MPARS</title>
   <!--jsとcssの読み込み-->
-  <script type="text/javascript" src="reserveProducts.js"></script>
-  <script type="text/javascript" src="getAvailableProducts.js"></script>
-  <link rel="stylesheet" type="text/css" href="reserveProducts.css">
+  <script type="text/javascript" src="js/reserveProducts.js"></script>
+  <script type="text/javascript" src="js/getAvailableProducts.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reserveProducts.css">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <img src="logo.jpg" width="125" height="70" align="top">
+  <img src="img/logo.jpg" width="125" height="70" align="top">
   <div align="right"><button type="button" class="btn btn-primary" onclick="back1()">予約済商品</button>
   <button type="button" class="btn btn-primary" onclick="back2()">ログアウト</button></div>
   <div class="h1">
