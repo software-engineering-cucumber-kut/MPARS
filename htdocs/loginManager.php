@@ -10,7 +10,7 @@
     <!--BootstrapのJavascriptよりも先にJQueryを読み込むようにしないとBootstrapのjavascriptがうまく動作しない-->
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="loginmanager.css" rel="stylesheet">
+    <link href="css/loginmanager.css" rel="stylesheet">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -23,15 +23,15 @@
     <!--グリッドシステムではcol-lg(md,sm,xs)は12段階で画面を分割できる-->
         <div class="col-sm-2">
         <div class="d-flex">
-        <div class="header-img"><img src="logo.jpg" width = "140" ></div>
+        <div class="header-img"><img src="img/logo.jpg" width = "140" ></div>
         </div>
         </div>
 
         <div class="col-sm-8"></div>
         <div align = "right" class="col-sm-2">
         <u><a href="home.php" style="font-size:30px;" >HOMEへ</a></u>
-        </div> 
-        <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">--> 
+        </div>
+        <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">-->
     </div>
     <br>
 

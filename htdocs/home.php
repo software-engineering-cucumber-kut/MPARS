@@ -71,7 +71,7 @@
                     <img src="img/outside.jpg" width="100%"><br/>
 
                     <div class="text-center">
-                        <a href="loginManager.html">管理者ログイン</a><br/>
+                        <a href="loginManager.php">管理者ログイン</a><br/>
                     </div>
                 </div>
             </div>
