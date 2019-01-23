@@ -1,5 +1,5 @@
 {
-  "success:"
+  "success":
   <?php
     require('database.php');
 
@@ -28,10 +28,10 @@
     $target_string = 'INTO review (itemid, contents, replyid, evaluation) VALUES (' .
     $json_obj->itemid . ',' .
     "'" . $json_obj->contents . "'" . ',' .
-    $json_obj->replyid . ',' .
+    'NULL,' .
     $json_obj->evaluation . ");";
     /*$target_string = ' INTO reviewtest (contents) VALUES (' . "'" . $json_obj->contents . "');";*/
-    echo $target_string;
+    // echo $target_string;
     $dbaccess_result = database('INSERT', $target_string);
     // SQL文
     /*$sql = " INSERT INTO review VALUES (id, itemid, $reviewComment, replyid, $reviewPoint, $timestamp) ";

@@ -1,5 +1,5 @@
 {
-  "success:"
+  "success":
   <?php
     // session_start();
     // if (isset($_SESSION['id'])) {
@@ -38,7 +38,7 @@
       $json_obj = json_decode($json_string);
 
       $target_string = 'INTO generaluser (id, name, phonenumber, password, address, birthday, mail) VALUES (' .
-      $json_obj->id . ',' .
+      'NULL,' .
       "'" . $json_obj->name . "'" . ',' .
       $json_obj->phonenumber . ',' .
       "'" . $json_obj->password . "'". ',' .
