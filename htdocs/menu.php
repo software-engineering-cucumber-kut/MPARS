@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="a_getProducts.js"></script>
-    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script type="text/javascript" src="js/a_getProducts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <title>MPARS</title>
 </head>
 
 <body>
     <!-- Start your code here -->
-    
+
     <!-- header.phpを読み込む -->
-    
-    
+
+
     <!-- 商品一覧 -->
     <div class="bread">
         <p>Bread menu</p>

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MPARS</title>
-    <script type="text/javascript" src="a_getReviews.js"></script>
-    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script type="text/javascript" src="js/a_getReviews.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery読み込み -->
@@ -108,7 +108,7 @@
 
     <div id="dialog2" style="display:none;">
         <p>どのSNSに共有しますか?</p>
-        <a href="https://twitter.com/?lang=ja" target="_blank"><img src="Twitter%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg" alt="twitter" height="100" width="100"></a><!-- target="_blank" 新規タブで開く-->
+        <a href="https://twitter.com/?lang=ja" target="_blank"><img src="Twitter.jpg" alt="twitter" height="100" width="100"></a><!-- target="_blank" 新規タブで開く-->
         <a href="https://ja-jp.facebook.com/" target="_blank"><img src="facebook.jpg" alt="facebook" height="90" width="90"></a>
         <a href="https://line.me/ja/" target="_blank"><img src="LINE.jpg" alt="LINE" height="100" width="100"></a>
     </div>

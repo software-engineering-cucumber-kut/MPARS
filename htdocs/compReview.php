@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MPARS</title>
-        <script type="text/javascript" src="a_compReview.js"></script>
-        <link rel="stylesheet" type="text/css" href="compReview.css">
+        <script type="text/javascript" src="js/a_compReview.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/compReview.css">
         <!-- BootstrapのCSS読み込み -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- jQuery読み込み -->
@@ -29,7 +29,7 @@
         <p>レビューが投稿されました。</p>
         <input type="button" value="戻る" class="btn btn-primary" onclick="back()" />
     </center>
-    
+
     <!-- End your code here -->
 </body>
 
