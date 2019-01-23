@@ -14,8 +14,8 @@
       echo"\t\t{\n",
           //"\t\t\t" . '"itemid":' . $val["itemid"] . ",\n",
           "\t\t\t" . '"evaluation":' . $reviews[$i]["evaluation"] . ",\n" .
-          "\t\t\t" . '"contents":' . $reviews[$i]["contents"] . ",\n" .
-          "\t\t\t" . '"datetime":' . $reviews[$i]["datetime"] . "\n";
+          "\t\t\t" . '"contents":"' . $reviews[$i]["contents"] . "\",\n" .
+          "\t\t\t" . '"datetime":"' . $reviews[$i]["datetime"] . "\"\n";
     	/*"\t\t\t" . '"itemid":' . $val["itemid"] . ",\n",
       "\t\t\t" . '"replyid":' . $val["replyid"] . ",\n",
       "\t\t\t" . '"evaluation":' . $evaluation_avg . ",\n",
