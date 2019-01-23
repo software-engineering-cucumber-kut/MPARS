@@ -11,3 +11,7 @@ textarea {
 .starrate {
     color: rgba(241,209,22,1.00);
 }
+
+.modal-dialog {
+    margin-top: 20%;
+}
