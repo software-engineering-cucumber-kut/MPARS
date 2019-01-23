@@ -17,6 +17,9 @@
               integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
               crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/header.css">
+
+        <!-- jQuery UIを使う -->
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     </head>
 <body>
 <div id="wrapper">
