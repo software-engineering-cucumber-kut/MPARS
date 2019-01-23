@@ -1,10 +1,10 @@
 /*新規アカウント登録情報の送信 */
 
-
+let accountType = '';
 
 const newAccount = () => {
-    
-    if($_POST['student']){
+    let sending_string = '';
+    if(accountType === 'student'){
         let newAccount_json = { 
             isstudent: 1,
             id: $('#sUserid').val() ,
@@ -12,34 +12,33 @@ const newAccount = () => {
             phonenumber: $('#sphonenumber').val() ,
             password: $('#password').val() 
         };
-        let sending_string = JSON.stringify(newAccount_json);
-    } else {
+        sending_string = JSON.stringify(newAccount_json);
+    } else if(accountType === 'general') {
         isstudent = 0;
         let newAccount_json = { 
             isstudent: 0,
-            id: $('#Userid').val() ,
             name: $('#name').val() ,
             phonenumber: $('#phonenumber').val() ,
             password: $('#password2').val(), 
             address: $('#address').val() ,
-            birthday: $('#birthday').val() ,
+            birthday: $('#birthday').val().replace(/(年|月|日)/g, '-') ,
             mail: $('#mail').val()  
         };
-        let sending_string = JSON.stringify(newAccount_json);
+        sending_string = JSON.stringify(newAccount_json);
     }
 
-        $.ajax({
-          type: 'POST',
-          url: 'http://localhost:8888/putCustomer.php',
-          datatype: 'json',
-          data: sending_string
-        }).done((res) => {
-            if (JSON.parse(res).success) {
-                location.href = "http://localhost:8888/loginCustomer.php";
-           } else {
-               console.log("newAccount sending failed");
-           }
-        });
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:8888/data/putCustomer.php',
+        datatype: 'json',
+        data: sending_string
+    }).done((res) => {
+        if (JSON.parse(res).success) {
+            location.href = "http://localhost:8888/loginCustomer.php";
+        } else {
+            console.log("newAccount sending failed");
+        }
+    });
 };
 
 
