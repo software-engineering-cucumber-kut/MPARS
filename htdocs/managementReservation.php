@@ -61,26 +61,11 @@
 
   <h2>予約済内容</h2>
 
-  <div id="showReservation-body">
-  </div>
-  <br>
-
-  <table border="2" width="700" align="center">
+  <table border="2" width="700" align="center" id="showReservation-body">
   <tr bgcolor="orange" align="center">
     <td>商品名</td>
     <td>個数</td>
     <td>値段</td>
-  </tr>
-  <tr bgcolor="white" align="center">
-    <td>クリームパン</td>
-    <td>2個</td>
-    <td>300円</td>
-  </tr>
-  <tr bgcolor="white" align="center">
-    <td>マカロン</td>
-    <td>3個</td>
-    <td>300円</td>
-  </tr>
   </table>
 
   <!--<script type="text/javascript" src="js/getCompReservation.js"></script>
