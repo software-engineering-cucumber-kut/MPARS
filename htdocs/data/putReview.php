@@ -4,7 +4,7 @@
     require('database.php');
 
     // タイムゾーン設定
-    date_default_timezone_set('Asia/Tokyo');
+    // date_default_timezone_set('Asia/Tokyo');
 /*
     if (isset($_GET['reviewPoint'])) {
       $reviewPoint = $_GET['reviewPoint'];
@@ -25,7 +25,7 @@
     /*
     $dbaccess_result = database('INSERT', 'INTO review (id, itemid, contents, replyid, evaluation, datetime) VALUES(NULL, ' . "'" . $json_obj->itemid . "'" . ',' . "'" . $json_obj->contents . "'" . ',' . NULL . ',' . "'" . $json_obj->evaluation . "'" . ',' .  "'" . $timestamp . "'" . ')');
     */
-    $target_string = 'INTO review (itemid, contents, replyid, evaluation) VALUES (' .
+    $target_string = 'INTO review (itemid, contents, evaluation) VALUES (' .
     $json_obj->itemid . ',' .
     "'" . $json_obj->contents . "'" . ',' .
     'NULL,' .
