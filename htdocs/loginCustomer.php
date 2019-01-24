@@ -9,14 +9,15 @@
     <title>Bootstrap Sample</title>
     <!--BootstrapのJavascriptよりも先にJQueryを読み込むようにしないとBootstrapのjavascriptがうまく動作しない-->
     <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="loginCustomer.css" rel="stylesheet">
-    <link href="loginCustomer2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/loginCustomer.css?<?php echo date("YmdHis"); ?>" rel="stylesheet">
+    <link href="css/loginCustomer2.css?<?php echo date("YmdHis"); ?>" rel="stylesheet">
  
     <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
+    <script
+              src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -26,12 +27,14 @@
     <!--グリッドシステムではcol-lg(md,sm,xs)は12段階で画面を分割できる-->
         <div class="col-sm-2">
         <div class="d-flex">
-        <div class="header-img"><img src="logo.jpg" width = "140" ></div>
+        <div class="header-img"><img src="img/logo.svg" width = "140" ></div>
         </div>
         </div>
 
         <div class="col-sm-8"></div>
-        <div class="col-sm-2"></div> 
+        <div align = "right" class="col-sm-2" style="margin-top:30px">
+        <u><a href="home.php" style="font-size:30px;" >HOMEへ</a></u>
+        </div> 
         <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">--> 
     </div>
     <br>
@@ -43,12 +46,13 @@
     </div>
 
     <br><br><br><br>
+    <form name="form1">
     <div  class="row">
         <div align = "right" class="col-sm-5">
         <b style="font-size:50px;">  ユーザID：</b>
         </div>
         <div align = "left" class="col-sm-6">
-        <input type="text" id="name" size="10" maxlength="10" style="font-size:50px;">
+        <input type="text" id="id" size="10" name="input01"maxlength="10" style="font-size:50px;">
         </div>
         <div class="col-sm-1">
         </div>
@@ -60,31 +64,35 @@
         <b style="font-size:50px;"> パスワード：</b>
         </div>
         <div class="col-sm-6">
-        <input type="password" id="password" size="10" maxlength="10" style="font-size:50px;">
+        <input type="password" id="password" size="10" name="input02" maxlength="10" style="font-size:50px;">
         <input type="checkbox" id="password-check">
         </div>
         <div align = "left" class="col-sm-1">
         </div>
     </div>
+    </form>
 
-    <br><br>
+    <br><br><br><br>
     <div  class="row">
-        <div align = "right" class="col-sm-7">
-        <input type="button" class="login_btn" value="ログイン"  onclick="location.href='./ReserveProducts.php'" >
+        <div  align = "right" class="col-sm-6">
+        <input type="button"   class="login_btn" value="学生ログイン" onclick="loginStudent_checkForm()" >
         </div>
-        <div class="col-sm-5">
+        <div  class="col-sm-6">
+        <input type="button"  class="login_btn" value="一般ログイン" onclick="loginGeneral_checkForm()" >
+        </div>
         </div>
     </div>
 
-    <br><br>
+    <br><br><br><br>
     <div  class="row">
-        <div align = "right" class="col-sm-7">
-        <input type="button" class="newAccount_btn" value="新規作成の方"  onclick="location.href='./newAccount.php'">
-        </div>
-        <div class="col-sm-5">
+        <div align = "center" class="col-sm-12">
+        <input type="button" class="newAccount_btn" value="新規作成の方" onclick="location.href='./newAccount.php'" >
         </div>
     </div>
 </div>
+
+<div id="result"></div>
+<script type="text/javascript" src="js/login.js?<?php echo date("YmdHis"); ?>"></script>
    <!--パスワード表示用javascript-->
 <script>
     var pw = document.getElementById('password');
