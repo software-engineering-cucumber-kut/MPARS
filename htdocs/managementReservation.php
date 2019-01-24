@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang ="ja">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MPARS</title>
+<?php
+include('reservationHeader.php');
+?>
   <!--jsとcssの読み込み-->
   <script type="text/javascript" src="js/managementReservation.js"></script>
   <link rel="stylesheet" type="text/css" href="css/managementReservation.css">
 
-  <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!--<script src="js/bootstrap.min.js"></script>-->
-  <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
-</head>
-
-<body>
   <img src="img/logo.jpg" width="125" height="70" align="top">
   <div align="right"><button type="button" class="btn btn-primary" onclick="back1()">戻る</button>
   <button type="button" class="btn btn-primary" onclick="back2()">ログアウト</button></div>
@@ -72,5 +58,6 @@
   <script type="text/javascript">
       getReservation();
   </script>-->
-</body>
-</html>
+<?php
+include('reservationFooter.php');
+?>
