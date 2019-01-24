@@ -62,7 +62,7 @@ const Student_login = () => {
 const General_login = () => {
     let login_json = { 
         accountType: "general",
-        id: $('#id').val(),
+        name: $('#id').val(),
         password: $('#password').val()};
     let sending_string = JSON.stringify(login_json);
     /*送信データ確認用 */
