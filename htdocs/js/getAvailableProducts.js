@@ -10,7 +10,7 @@ let template6 = '</div> <div hidden class="itemid">';
 let template7 = '</div> </div> </a> </div>';
 
 const addAvailableProduct = (msg) => {
-	let availableProduct = JSON.parse(msg).menu;
+	let availableProduct = JSON.parse(msg).products;
     $.each(availableProduct, (index, val) => {
 		let card = template1 + val.photo + template2 + val.name + template3;
 		let desclist = val.description.split("===");
@@ -40,7 +40,7 @@ const addAvailableProduct = (msg) => {
 };
 $.ajax({
 	type: 'GET',
-	url: 'http://localhost:80/stub/getAvailableProducts.php',
+	url: 'data/getAvailableProducts.php',
 	datatype: 'json'
 }).done(addAvailableProduct);
 

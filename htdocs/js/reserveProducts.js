@@ -3,7 +3,7 @@ function back1(){
 }
 
 function back2(){
-    window.location.href = "home.php"; // ページ遷移
+    window.location.href = "logout.php"; // ページ遷移
 }
 
 function reserve(){
