@@ -1,44 +1,34 @@
+{
+	"products": [
 <?php
   require('database.php');
-  $product = $_GET[itemid];
-  $stock = $_GET[stock];
+  $items = database('SELECT', '* FROM item');
 
-  foreach($stock as $val) {
+  foreach($items as $val) {
     // 在庫数取得
-    $target = ' currentstock FROM stock WHERE itemid = ' . $val["id"];
+    $target = ' currentstock, nextstock FROM stock WHERE itemid = ' . $val["id"];
 
-    $evaluation_obj = database('SELECT', $target);
-    $evaluation = intval($evaluation_obj[0]["currentstock"]);
+    $stocks       = database('SELECT', $target);
+    $currentStock = intval($evaluation_obj[0]["currentstock"]);
+    $nextStock    = intval($evaluation_obj[0]["nextstock"]);
 
-    if ($stock > $evaluation) {
-      echo "\t\t\t" . '"itemid:"' . $val["itemid"] . ",\n",
-           "\t\t\t" . '"currentstock:"' . $val["stock"] . ",\n";
-      /*
-      if ($val == end($evaluation_obj)) {
-        print("\t\t}\n");
-      } else {
-        print("\t\t), \n");
-      }
-      */
-      add();
-    } else {
-      echo "\t\t\t" . '"response:"' . '0' . ",\n";
-      /*
-      if ($val == end($evaluation_obj)) {
-        print("\t\t}\n");
-      } else {
-        print("\t\t), \n");
-      }
-      */
-      add();
-    }
+      echo"\t\t{\n\t\t\t" . '"id":' . $val["id"] . ",\n",
+          "\t\t\t" . '"name":' . $val["name"] . ",\n",
+          "\t\t\t" . '"photo":' . $val["photo"] . ",\n",
+          "\t\t\t" . '"description":' . $val["description"] . ",\n",
+          "\t\t\t" . '"price":' . $val["price"] . ",\n",
+          "\t\t\t" . '"currentstock":' . $currentStock . ",\n",
+          "\t\t\t" . '"nextstock":' . $nextStock . "\n";
+      add($val, $items);
   }
 
-  function add($val, $evaluation_obj) {
-    if ($val == end($evaluation_obj)) {
+  function add($val, $vals) {
+    if ($val == end($vals)) {
       print("\t\t}\n");
     } else {
-      print("\t\t), \n");
+      print("\t\t}, \n");
     }
   }
 ?>
+	]
+}
