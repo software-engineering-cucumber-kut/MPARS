@@ -2,7 +2,7 @@
 const getRequests = () => {
     $.ajax({
         type: 'POST',
-        url: 'getRequest.php',
+        url: 'data/getRequest.php',
         datatype: 'json'
     }).done((res) => {
         // console.log(res);
@@ -17,7 +17,7 @@ const addRequests = (data) => {
         // 追加する文字列
         var request = '<div class="request"><div class="request-header">' + val.datetime + '</div>' + val.contents + '</div><br/>';
 
-        $('#requests-body').append(request);
+        $('#requests-body').prepend(request);
     });
 
 };
