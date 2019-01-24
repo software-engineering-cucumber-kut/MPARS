@@ -4,7 +4,7 @@
 require('database.php');
 session_start();
 if ($_SESSION["id"] != NULL) {
-    $reserveProducts = database('SELECT', '* FROM reservation JOIN reservationitems ON reservationitems.reservationid = reservation.id WHERE reservation.userid = ' . $_SESSION["id"]);
+    $reserveProducts = database('SELECT', '* FROM reservation JOIN reservationitems ON reservationitems.reservationid = reservation.id WHERE reservation.userid = ' . $_SESSION["id"] . ' AND reservation.receiveday > now()');
     //$reserveProducts = database('SELECT', '* FROM reservation);
     // DBアクセス結果をforeachで取り出す
     foreach($reserveProducts as $val) {
