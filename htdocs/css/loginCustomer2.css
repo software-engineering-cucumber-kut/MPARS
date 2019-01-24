@@ -1,18 +1,18 @@
 input.newAccount_btn {
-	font-size:30px;
+	font-size:50px;
 	position: relative;
 	display: white;
-	width: 300px;
+	width: 400px;
 	padding: 0.05em;
 	text-align: center;
 	text-decoration: none;
 	color: #FFF;
-	background: #26C6DA;
-    border-bottom: 2px solid #00838F;
-    border-radius: 40px; 
+	background: rgba(253, 136, 238, 0.966);
+    border-bottom: 2px solid rgb(235, 90, 215);
+    border-radius: 30px; 
 }
 
 input.newAccount_btn:active {
-	border-bottom: 2px solid #26C6DA;
+	border-bottom: 2px solid rgb(239, 70, 245);
 	box-shadow: 0 0 2px rgba(241, 233, 233, 0.945);
 }
