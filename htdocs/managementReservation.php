@@ -3,6 +3,7 @@ include('reservationHeader.php');
 ?>
   <!--jsとcssの読み込み-->
   <script type="text/javascript" src="js/managementReservation.js"></script>
+  <script type="text/javascript" src="js/deleteReservation.js"></script>
   <link rel="stylesheet" type="text/css" href="css/managementReservation.css">
 
   <img src="img/logo.jpg" width="125" height="70" align="top">
@@ -30,7 +31,7 @@ include('reservationHeader.php');
                   buttons: {
                       "はい": function() {
                           $(this).dialog("close");
-                          window.location.href = "deleteReservation.php";
+                          deleteReservation();
                       },
                       "いいえ": function() {
                           $(this).dialog("close");
