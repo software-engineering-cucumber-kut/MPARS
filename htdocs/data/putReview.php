@@ -28,7 +28,6 @@
     $target_string = 'INTO review (itemid, contents, evaluation) VALUES (' .
     $json_obj->itemid . ',' .
     "'" . $json_obj->contents . "'" . ',' .
-    'NULL,' .
     $json_obj->evaluation . ");";
     /*$target_string = ' INTO reviewtest (contents) VALUES (' . "'" . $json_obj->contents . "');";*/
     // echo $target_string;
