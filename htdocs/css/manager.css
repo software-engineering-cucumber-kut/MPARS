@@ -30,3 +30,7 @@
 #menu {
     margin-top: 4em
 }
+
+.header-img {
+    max-width: 500px;
+}
