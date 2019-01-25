@@ -15,7 +15,7 @@ const addRequests = (data) => {
     // イベント情報をホーム画面に追加
     $.each(request, (index, val) => {
         // 追加する文字列
-        var request = '<div class="request"><div class="request-header">' + val.datetime + '</div>' + val.contents + '</div><br/>';
+        var request = '<li class="request list-group-item"><div class="request-header">' + val.datetime + '</div>' + val.contents + '</div><br/>';
 
         $('#requests-body').prepend(request);
     });
