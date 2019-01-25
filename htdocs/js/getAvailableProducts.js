@@ -5,9 +5,9 @@ let template1 = '<div class="col-md-3"> <div class="card"> <img class="card-img-
 let template2 = '" alt="';
 let template3 = '"> <div class="card-body"> <h4 class="card-title">';
 let template4 = '</h4> <p class="card-text">';
-let template5 = '</p> <br>'
+let template5 = '</p> <br>';
 let template6 = '</div> <div hidden class="itemid">';
-let template7 = '</div> </div> </a> </div>';
+let template7 = '</div> </div> </div>';
 
 const addAvailableProduct = (msg) => {
 	let availableProduct = JSON.parse(msg).products;
@@ -15,13 +15,13 @@ const addAvailableProduct = (msg) => {
 		let card = template1 + val.photo + template2 + val.name + template3;
 		let desclist = val.description.split("===");
 		let title = desclist[0];
-		article = desclist[1];
+		//article = desclist[1];
 //        console.dir(val);
 
         let itemid = val.id;
 
-		card += title + template4 + article + template5 + template6 + itemid + template7;
-//        console.log(card);
+		card += title + template4 + template5 + "￥" + val.price + "<br>予約上限" + template6 + itemid + template7;
+ //        console.log(card);
 
 		switch (val.name) {
 			case "bread":
@@ -40,7 +40,7 @@ const addAvailableProduct = (msg) => {
 };
 $.ajax({
 	type: 'GET',
-	url: 'data/getAvailableProducts.php',
+	url: 'http://localhost:80/stub/getAvailableProducts.php',
 	datatype: 'json'
 }).done(addAvailableProduct);
 
