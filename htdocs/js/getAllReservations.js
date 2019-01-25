@@ -2,37 +2,41 @@
 const getAllReservation = () => {
     $.ajax({
         type: 'GET',
-        url:  'http://localhost:80/stub/getAllReservations.php',
+        url:  '/data/getAllReservations.php',
         datatype: 'json'
     }).done((res) => {
 //        console.log(res);
         addAllReservation(JSON.parse(res));
+        $('[data-toggle="popover"]').popover();
     });
 };
 
 const addAllReservation = (data) => {
-    let reservations = data.reservation;
+    let reservations = data.AllReservation;
 
-    // イベント情報をホーム画面に追加
+    // 予約情報を一行追加
     $.each(reservations, (index, val) => {
-        // 追加する文字列
-        var card = val.reservationtime + '        ' +
-            val.receiveday + '        ' +
-            val.amount + '        ' +
-            val.reservationid + '        ' +
-            '<input type="button" value="詳細情報" onclick="clickBtn2()" /><div id="p2">' +
-            val.phonenumber + '        ' +
-            val.mail + '        ' +
-            val.address + '        ' +
-            '</div>';
+        let itemsString = '';
+        $.each(val.reservationitems, (index, item) => {
+            itemsString += item.itemname + ' : ';
+            itemsString += item.amount + '<br/>';
+        });
 
-        $('#AllReservations').append(card);
+        // 追加する文字列
+        var card = '<tr>' +
+            '<td>' + val.reservationtime + '</td>' +
+            '<td>' + val.receiveday + '</td>' +
+            '<td>' + itemsString + '</td>' +
+            '<td>' + val.reservationid + '</td>' +
+            '<td> <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="auto" data-content="' +
+            val.phonenumber + ', ' +
+            val.mail + ', ' +
+            val.address + 
+            '">詳細情報</button> </td> </tr>';
+
+        $('#allReservations').prepend(card);
     });
 };
-
-window.onload = function(){
-  document.getElementById("p2").style.visibility = "hidden";
-}
 
 function clickBtn2(){
 	const p2 = document.getElementById("p2");
