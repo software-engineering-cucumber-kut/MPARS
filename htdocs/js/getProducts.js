@@ -1,7 +1,7 @@
 let breadDiv = $("#breads");
 let sweetsDiv = $("#sweets");
 let drinkDiv = $("#drinks");
-let template1 = '<div class="col-md-3"> <a href="review.php"> <div class="card"> <img class="card-img-top" src="img/';
+let template1 = '<div class="col-md-3"> <a href="review.php"> <div class="card"> <img class="card-top-img img-fluid" src="img/';
 let template2 = '" alt="';
 let template3 = '"> <div class="card-body"> <h4 class="card-title">';
 let template4 = '</h4> <p class="card-text">';

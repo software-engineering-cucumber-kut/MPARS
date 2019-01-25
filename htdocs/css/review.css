@@ -15,3 +15,8 @@ textarea {
 .modal-dialog {
     margin-top: 20%;
 }
+
+.card-top-img {
+    height: 100%;
+    width: 100%;
+}
