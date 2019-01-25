@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <!--internetExplorerのブラウザでバージョンによって崩れることがあるので、それを防ぐため互換表示をさせないために設定するmetaタグ-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--レスポンシブwebデザインに必要なmetaタグ-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mpars</title>
-    <!--BootstrapのJavascriptよりも先にJQueryを読み込むようにしないとBootstrapのjavascriptがうまく動作しない-->
-    <!-- BootstrapのCSS読み込み -->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <!--<script src="/js/bootstrap.min.js"></script>-->
-</head>
-<body>
+<?php
+include('managerHeader.php');
+?>
 <div class="container-fluid">
     <div class="row">
     <!--グリッドシステムではcol-lg(md,sm,xs)は12段階で画面を分割できる-->
@@ -57,5 +42,6 @@
 <script type="text/javascript">
     getRequests();
 </script>
-</body>
-</html>
+<?php
+include('managerFooter.php');
+?>

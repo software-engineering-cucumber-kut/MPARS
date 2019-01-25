@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MPARS</title>
-    <script type="text/javascript" src="js/a_getProducts.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/editProducts.css">
-    <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
-</head>
+<?php
+include('managerHeader.php');
+?>
+<script type="text/javascript" src="js/a_getProducts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/editProducts.css">
 
 <body>
     <!-- Start your code here -->
@@ -75,6 +63,5 @@
         </div>
     </div>
     <!-- End your code here -->
-</body>
-
-</html>
+<?php
+include('managerFooter.php');
