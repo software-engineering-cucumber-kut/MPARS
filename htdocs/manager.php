@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <!--internetExplorerのブラウザでバージョンによって崩れることがあるので、それを防ぐため互換表示をさせないために設定するmetaタグ-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--レスポンシブwebデザインに必要なmetaタグ-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="css/manager.css?<?php echo date("YmdHis"); ?>" rel="stylesheet">
-    <!-- jQuery読み込み -->
-     <script
-          src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"></script>
-</head>
-
-<html lang="ja">
-
-<body>
+<?php
+include('managerHeader.php');
+?>
+<link href="css/manager.css?<?php echo date("YmdHis"); ?>" rel="stylesheet">
 <br>
 <div class="container-fluid">
     <div class="row">
@@ -44,54 +25,18 @@
     <h2> <font color="white" face="ＭＳ 明朝" style="font-size:50px;">管理者ホーム</font> </h2>
     </div>
     </div>
-
-    <br><br><br><br>
-    <div  class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5 ,size"> 
-        <a href="#" class="square_btn" onclick="location.href='./allReservations.php'" >予約一覧</a>    
+    
+    <div class="row" id="menu">
+        <div class="col-md-12 mx-auto">
+            <div class="list-group list-group-flush">
+                <a href="allReservations.php" class="list-group-item list-group-item-action">予約一覧</a>
+                <a href="stock.php" class="list-group-item list-group-item-action">在庫編集</a>
+                <a href="editProducts.php" class="list-group-item list-group-item-action">メニュー編集</a>
+                <a href="showRequests.php" class="list-group-item list-group-item-action">リクエスト一覧</a>
+                <a href="editHome.php" class="list-group-item list-group-item-action">店舗情報編集</a>
+            </div>
         </div>
-        <div class="col-sm-5"></div>
     </div>
-
-    <br>
-    <div  class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-5">
-        <a href="#" class="square_btn" onclick="location.href='./stock.php'">在庫編集</a>  
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
-
-    <br>
-    <div  class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5"> 
-        <a href="#" class="square_btn" onclick="location.href='./editProducts.php'">メニュー編集</a>    
-        </div>
-        <div class="col-sm-5"></div>
-    </div>
-
-    <br>
-    <div  class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-5">
-        <a href="#" class="square_btn" onclick="location.href='./showRequests.php'">リクエスト一覧</a>  
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
-
-    <br>
-    <div  class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5"> 
-        <a href="#" class="square_btn" onclick="location.href='./editHome.php'">店舗情報編集</a>    
-        </div>
-        <div class="col-sm-5"></div>
-    </div>
-
 </div>
-
-</body>
-</html>
-
+<?php
+include('reservationFooter.php');
