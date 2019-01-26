@@ -20,29 +20,6 @@ include('reservationHeader.php');
             <hr>
         </div>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="noimage.jpg" alt="カードの画像">
-        <div class="card-body">
-            <h3 class="card-title" align="left">サンドイッチ</h3>
-            <p class="card-text">具だくさんでボリュームがあります♪</p>
-            <span style="float:right;">250</span><span style="float:right;">￥</span>
-            <form>
-              <table border="0" cellspacing="4" cellpadding="0">
-                <tr>
-                  <td>数量<select name="cnt">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select></td>
-                  <td><button type="button" class="btn btn-primary" onclick="reserve()">予約</button></td>
-                </tr>
-              </table>
-              <input type="hidden" name="goodsNo" value="1">
-            </form>
-        </div>
-    </div>
     <br>
     <div class="row" id="breads">
     </div>
