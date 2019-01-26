@@ -10,8 +10,8 @@
 
     $stocks       = database('SELECT', $target);
     $reservedNum  = intval(database('SELECT', 'SUM(amount) FROM reservation, reservationitems WHERE reservation.id = reservationitems.reservationid AND reservation.received = 0 AND reservationitems.itemid = ' . $val["id"])[0]["SUM(amount)"]);
-    $currentStock = intval($evaluation_obj[0]["currentstock"]);
-    $nextStock    = intval($evaluation_obj[0]["nextstock"]);
+    $currentStock = intval($stocks[0]["currentstock"]);
+    $nextStock    = intval($stocks[0]["nextstock"]);
 
       echo"\t\t{\n\t\t\t" . '"id":' . $val["id"] . ",\n",
           "\t\t\t" . '"name":"' . $val["name"] . "\",\n",
