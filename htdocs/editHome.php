@@ -1,15 +1,17 @@
 <?php
-include('managerHeader.php');
+  include('managerHeader.php');
 ?>
-<script type="text/javascript" src="/js/sendEditHome.js"></script>
-<script type="text/javascript" src="/js/getHomeInfo.js"></script>
-<link rel="stylesheet" href="css/header.css">
-<style type="text/css">
-  textarea{
-    width:100%;
-    height:30%;
-  }
-</style>
+        <script type="text/javascript" src="/js/sendEditHome.js"></script>
+        <script type="text/javascript" src="/js/getEditHomeInfo.js"></script>
+        <link rel="stylesheet" href="css/editHome.css">
+        <style type="text/css">
+          textarea{
+            width:100%;
+            height:30%;
+          }
+        </style>
+    </head>
+<body>
 <div id="wrapper">
 <!-- global menu -->
 <div class="d-flex flex-row">
@@ -34,62 +36,26 @@ include('managerHeader.php');
                     <div class="space-side">
                         <div class="h3">BUSINESS DAY</div>
                         <p id="business-day-body">
-                            <textarea name="bysinessday-textarea"></textarea>
+                            火・金曜日 11:30〜14:00 （クレープは13:00〜16:00）
                         </p>
-
                         <div class="h3">LOCATION</div>
                         <p>
-                            <textarea name="location-textarea"></textarea>
+                            高知工科大学国際交流会館 <br/> 〒782-8502 高知県香美市土佐山田町宮ノ口185
                         </p>
                         <div class="h3">EVENT INFOMATION</div>
                         <p>
                             <div id="event-info-body">
-                            <textarea name="event-info-textarea"></textarea>
-                                <!--
-                                <div class="card">
-                                    <div class="card-header"> 臨時開店のお知らせ </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><strong>NAME : </strong> ほげ shop </li>
-                                        <li class="list-group-item"><strong>DATE : </strong>2019-1-1</li>
-                                        <li class="list-group-item"><strong>HOURS: </strong>18:00〜19:00</li>
-                                    </ul>
-                                </div>-->
                             </div>
                         </p>
 
                         <div class="h3">CONTACT INFO</div>
                         <p>
                             <div id="contact-info-body">
-                              <textarea name="contact-textarea"></textarea>
-                                <!--
-                                <div class="card">
-                                    <div class="card-header"> ほげ shop </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><strong>ADDRESS : </strong> Kochi</li>
-                                        <li class="list-group-item"><strong>PHONE : </strong>1824325235</li>
-                                        <li class="list-group-item"><strong>EMAIL : </strong>hogehoge@hoge.com</li>
-                                        <li class="list-group-item"><strong>BUSINESS DAY : </strong>月火</li>
-                                        <li class="list-group-item"><strong>OPENING HOURS : </strong>18:00 ~ 19:00</li>
-                                    </ul>
-                                </div>
-                                <br>
-
-                                <div class="card">
-                                    <div class="card-header"> ほげ shop </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><strong>ADDRESS : </strong> Kochi</li>
-                                        <li class="list-group-item"><strong>PHONE : </strong>1824325235</li>
-                                        <li class="list-group-item"><strong>EMAIL : </strong>hogehoge@hoge.com</li>
-                                        <li class="list-group-item"><strong>BUSINESS DAY : </strong>月火</li>
-                                    </ul>
-                                </div> -->
                             </div>
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <br/>
 
                     <h2>Map</h2>
                     <img src="img/map.png" width="100%">
@@ -99,7 +65,6 @@ include('managerHeader.php');
                         </div>
                         <p class="btn_upload">
                         </p>
-                    </div>
                     <h2>Photos</h2>
                     <img src="img/outside.jpg" width="100%">
                     <div class="input_file">
@@ -113,14 +78,18 @@ include('managerHeader.php');
         </div>
     </div>
 </div>
-<p class="btn_upload"><a　href="home.php">
-  <input type="submit" value="保存" class="btn btn-primary" onclick="sendEditHome()" /></a>
+<div class="button_wrapper">
+<p class="btn_upload">
+  <input type="submit" onclick="location.href='./manager.php'"　value="保存" class="btn btn-primary" onclick="sendEditHome()" />
 </p>
-    <!--<script type="text/javascript" src="js/getHomeInfo.js"></script>
-    <script type="text/javascript">
-        getHomeInfo();
-    </script>-->
-    <?php require('footer.php');?>
+</div>
+
+<!-- 時間の選択一覧表示の処理 -->
+<script type="text/javascript">
+  getEditHomeInfo();
+</script>
+
+<?php require('footer.php'); ?>
 <?php
-include('managerFooter.php');
+  include('managerFooter.php');
 ?>
