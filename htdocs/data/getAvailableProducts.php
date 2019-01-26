@@ -9,6 +9,7 @@
     $target = ' currentstock, nextstock FROM stock WHERE itemid = ' . $val["id"];
 
     $stocks       = database('SELECT', $target);
+    $reservedNum  = intval(database('SELECT', 'SUM(amount) FROM reservation, reservationitems WHERE reservation.id = reservationitems.reservationid AND reservation.received = 0 AND reservationitems.itemid = ' . $val["id"])[0]["SUM(amount)"]);
     $currentStock = intval($evaluation_obj[0]["currentstock"]);
     $nextStock    = intval($evaluation_obj[0]["nextstock"]);
 
@@ -17,7 +18,7 @@
           "\t\t\t" . '"photo":"' . $val["photo"] . "\",\n",
           "\t\t\t" . '"description":"' . $val["description"] . "\",\n",
           "\t\t\t" . '"price":' . $val["price"] . ",\n",
-          "\t\t\t" . '"currentstock":' . $currentStock . ",\n",
+          "\t\t\t" . '"currentstock":' . ($currentStock - $reservedNum) . ",\n",
           "\t\t\t" . '"nextstock":' . $nextStock . "\n";
       add($val, $items);
   }
