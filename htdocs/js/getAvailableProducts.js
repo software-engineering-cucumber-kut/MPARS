@@ -60,9 +60,9 @@ const setReserveEventOnClick = () => {
         let numberValue = parseInt(currentT.previousElementSibling.lastChild.value);
         let limitValue = parseInt(currentT.parentElement.parentElement.children[1].innerText);
         let itemid = parseInt(currentT.parentElement.parentElement.parentElement.lastElementChild.innerText);
-//        console.log(numberValue);
-//        console.log(limitValue);
-//        console.log(itemid);
+        //        console.log(numberValue);
+        //        console.log(limitValue);
+        //        console.log(itemid);
 
         if (numberValue > limitValue) {
             alert("予約上限を超えています");
@@ -73,14 +73,35 @@ const setReserveEventOnClick = () => {
                 amount: numberValue
             };
 
-            if (sessionStorage.getItem('reservations') === null) {
-                // sessionStorage初期化
-                sessionStorage.setItem('reservations', '{ "products": [] }');
+            let currentReservations = sessionStorage.getItem('reservations');
+            // console.log(currentReservations);
+            //console.log(!currentReservations || currentReservations === "null")
+            if (!currentReservations || currentReservations === "null") {
+                // currentReservationsionStorage初期化
+                let initJson = {
+                    products: [
+                        newReservation
+                    ]
+                };
+                sessionStorage.setItem('reservations', JSON.stringify(initJson));
+                
+            } else {
+                currentReservations = JSON.parse(currentReservations);
+                let exists = 0;
+                $.each(currentReservations.products, (index, val) => {
+                    if (val.itemid === newReservation.itemid) {
+                        val.amount = newReservation.amount;
+                        exists = 1;
+                        return false;
+                    }
+                });
+                if (!exists) {
+                    currentReservations.products.push(newReservation);
+                }
+                
+                sessionStorage.setItem('reservations', JSON.stringify(currentReservations));
             }
-            let currentReservations = JSON.parse(sessionStorage.getItem('reservations'));
-            currentReservations.products.push(newReservation);
-            sessionStorage.setItem('reservations', JSON.stringify(currentReservations));
-            
+
             // 移動
             location.href = 'checkReservation.php';
         }
