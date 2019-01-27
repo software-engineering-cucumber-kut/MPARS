@@ -58,20 +58,21 @@
                 <div class="col-md-4">
 
                     <h2>Map</h2>
-                    <img src="img/map.png" width="100%">
-                    <div class="input_file">
-                        <div class="preview">
-                            <input accept="image/*" id="imgFile" type="file">
-                        </div>
-                        <p class="btn_upload">
-                        </p>
-                    <h2>Photos</h2>
-                    <img src="img/outside.jpg" width="100%">
-                    <div class="input_file">
-                        <div class="preview">
-                            <input accept="image/*" id="imgFile" type="file">
-                        </div>
 
+                    <div class="input_file1">
+                        <div class="preview1">
+                            <input type="file" id="select_photo1" accept="image/*" onchange="previewFile1()" required>
+                            <br><br>
+                            <img id="photo1" src="img/map.png" width="100%" height="100%">
+                        </div><br>
+                    <h2>Photos</h2>
+
+                    <div class="input_file2">
+                        <div class="preview2">
+                            <input type="file" id="select_photo2" accept="image/*" onchange="previewFile2()" required>
+                            <br><br>
+                            <img id="photo2" src="img/outside.jpg" width="100%" height="100%">
+                        </div>
                     </div>
                 </div>
             </div>
