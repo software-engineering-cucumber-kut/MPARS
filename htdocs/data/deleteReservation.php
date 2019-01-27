@@ -11,12 +11,17 @@ if ($_SESSION["id"] != NULL) {
     // 予約idを取得
     $target_string = 'id FROM reservation WHERE userid = ' . $_SESSION["id"] . ' AND receiveday >= now()';
     $dbaccess_result = database('SELECT', $target_string);
+    if ($dbaccess_result === null) {
+        echo"0\n}";
+        return;
+    }
 
     // まずreservationitemsから削除
-    $target_string = 'FROM reservationitems WHERE reservationid = ' . $dbaccess_result[0]["id"];
+    $reservationid = $dbaccess_result[0]["id"];
+    $target_string = 'FROM reservationitems WHERE reservationid = ' . $reservationid;
     $dbaccess_result = database('DELETE', $target_string);
 
-    $target_string = 'FROM reservation WHERE userid = ' . $_SESSION["id"] . ' AND receiveday >= now()';
+    $target_string = 'FROM reservation WHERE id = ' . $reservationid . ' AND receiveday >= now()';
     $dbaccess_result = database('DELETE', $target_string);
     if ($dbaccess_result) {
         echo "1";
