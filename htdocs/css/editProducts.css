@@ -1,6 +1,7 @@
 .card {
-    margin: 20px; /*指定要素の全四方(上下左右)のマージン領域の設定*/
-    width: 200px; /*領域の幅*/
+    margin-top: 10px;
+    /*margin: 20px; /*指定要素の全四方(上下左右)のマージン領域の設定*/
+    /*width: 200px; /*領域の幅*/
     /*background: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 5px #ccc;*/
@@ -10,6 +11,11 @@
     max-width: 100%;
     height: auto;
 }
+
+.starrate {
+    color: rgba(241,209,22,1.00);
+}
+/*
 .card-content {
     padding: 20px;
 }
@@ -36,3 +42,4 @@
 .card-link a:hover {
     color: #0090aa;
 }
+*/

@@ -7,6 +7,7 @@ let template5 = '</p> <br> <div class="starrate">'
 let template6 = '</div> </div> <div hidden class="itemid">';
 let template7 = '</div> </div> </a> </div>';
 const addItemInfoToPage = (msg) => {
+    console.log(itemDiv);
 	let items = JSON.parse(msg).menu;
     $.each(items, (index, val) => {
 		let card = template1 + val.photo + template2 + val.name + template3;

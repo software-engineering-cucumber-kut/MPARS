@@ -1,8 +1,7 @@
 <?php
 include('managerHeader.php');
 ?>
-<script type="text/javascript" src="js/a_getProducts.js"></script>
-<link rel="stylesheet" type="text/css" href="css/menu.css">
+<!--<link rel="stylesheet" type="text/css" href="css/menu.css">-->
 <link rel="stylesheet" type="text/css" href="css/editProducts.css">
 
 <body>
@@ -20,48 +19,22 @@ include('managerHeader.php');
 
     <div class="container-fluid">
         <br>
-        <div class="row text-left">
+        <div class="row">
             <div class="col-md-12">
-                <h4>Bread</h4>
-                <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
-                <hr>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/noimage.jpg" alt="カードの画像">
-                    <div class="card-body">
-                        <span style="float:right;">点</span><span style="float:right;">2</span><h3 class="card-title" align="left">サンドイッチ</h3>
-                        <p class="card-text">具だくさんでボリュームがあります♪</p>
-                        <span style="float:right;">250</span><span style="float:right;">￥</span>
-                        <a href="editDetailProduct.php" class="btn btn-primary" onclick="Editproduct()">編集</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row" id="breads">
-        </div>
-        <br>
-        <div class="row text-left">
-            <div class="col-md-12">
-                <h4>Sweets</h4>
-                <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
+                <h4>Items</h4>
                 <hr>
             </div>
         </div>
-        <br>
-        <div class="row" id="sweets">
-        </div>
-        <br>
-        <div class="row text-left">
+        <div class="row">
             <div class="col-md-12">
-                <h4>Drink</h4>
-                <input type="button" value="追加" class="btn btn-primary" onclick="Addproduct()" />
-                <hr>
+                <input type="button" value="新規追加" class="btn btn-primary" onclick="Addproduct()" />
             </div>
         </div>
-        <br>
-        <div class="row" id="drinks">
+        <div class="row" id="items">
         </div>
     </div>
     <!-- End your code here -->
+<script type="text/javascript" src="js/a_getProducts.js"></script>
+<script type="text/javascript" src="js/editProducts.js"></script>
 <?php
 include('managerFooter.php');
