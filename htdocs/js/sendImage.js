@@ -13,6 +13,7 @@ const sendImage = (form) => {
         dataType : "html",
         async: false
     }).done((res) => {
+        //console.log("sendImage:" + res);
         photoName = JSON.parse(res).name;
     });
     return photoName;

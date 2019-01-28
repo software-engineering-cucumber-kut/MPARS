@@ -20,7 +20,7 @@ include('managerHeader.php');
         <div class="col-md-12">
 
             <form id="imgForm">
-                <input type="file" id="select_photo" accept="image/*" onchange="previewFile()" required>
+                <input type="file" name="image" id="select_photo" accept="image/*" onchange="previewFile()" required>
             </form>
             <br>
             <br>
@@ -45,8 +45,14 @@ include('managerHeader.php');
                 <br>
                 <textarea id="description" placeholder="テキストを入力して下さい。(500文字以内)" maxlength="500" cols="50" rows="4" required></textarea>
 
+                <br><br>
+                <b><label>店名:</label></b>
                 <br>
-                <input type="submit" value="保存" class="btn btn-primary" onclick="sendProduct()" />
+                <textarea id="storename" placeholder="店名を入力してください。" maxlength="10" cols="50" rows="1" required></textarea>
+
+                <br>
+                <br>
+                <input type="button" value="保存" class="btn btn-primary" onclick="sendProduct()" />
                 <!--&emsp;<input type="button" value="削除" class="btn btn-primary" onclick="Deleteproduct()" />-->
 
             </form>

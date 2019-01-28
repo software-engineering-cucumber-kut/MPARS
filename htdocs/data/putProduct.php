@@ -8,8 +8,11 @@ if (isset($_SESSION['id'])) {
     $json_obj = json_decode($json_string);
 
     //var_dump($json_obj);
+    /*
     $itemId = database('SELECT', 'id from item WHERE name = \'' . $json_obj->name . '\'');
     $itemId = (int)$itemId[0]["id"];
+     */
+    $itemId = $json_obj->itemid;
     $storeId = database('SELECT', 'id from store WHERE name = \'' . $json_obj->storename . '\'');
     $storeId = (int)$storeId[0]["id"];
 
