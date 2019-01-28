@@ -33,7 +33,7 @@
         </div>
 
         <div class="col-sm-8"></div>
-        <div align = "right" class="col-sm-2" style="margin-top:30px">
+        <div align = "right" class="col-sm-2" style="margin-top:20px">
         <!--uタグは下線の追加  削除は→text-decoration:none;-->
         <u><a href="home.php" onClick="window.close();" style=" font-size:30px; ">HOMEへ</a></u>
         </div>
