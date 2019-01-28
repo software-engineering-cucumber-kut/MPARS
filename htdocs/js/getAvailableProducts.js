@@ -1,6 +1,4 @@
-let breadDiv = $("#breads");
-let sweetsDiv = $("#sweets");
-let drinkDiv = $("#drinks");
+let itemDiv = $("#items");
 let template1 = '<div class="col-md-3"> <div class="card"> <img class="card-img-top" src="img/';
 let template2 = '" alt="';
 let template3 = '"> <div class="card-body"> <h4 class="card-title">';
@@ -19,8 +17,8 @@ const addAvailableProduct = (msg) => {
         }
 
         let card = template1 + val.photo + template2 + val.name + template3;
-        let desclist = val.description.split("===");
-        let title = desclist[0];
+        let title = val.name;
+        let article = val.description;
         //article = desclist[1];
         //        console.dir(val);
 
@@ -29,19 +27,7 @@ const addAvailableProduct = (msg) => {
         card += title + template4 + "￥" + val.price + template5 + val.currentstock + template6 + template7 + itemid + template8;
         //        console.log(card);
 
-        switch (val.name) {
-            case "bread":
-                breadDiv.append(card);
-                break;
-            case "sweets":
-                sweetsDiv.append(card);
-                break;
-            case "drink":
-                drinkDiv.append(card);
-                break;
-            default:
-                console.dir(val.name);
-        }
+        itemDiv.append(card);
     });
 };
 $.ajax({
@@ -57,7 +43,12 @@ const setReserveEventOnClick = () => {
     $('.reserve-btn').on('click', (event) => {
         let currentT = event.currentTarget;
         // 現状のDOM構成に依存した実装．フォーム等から入力値，限界値，itemidを取得
-        let numberValue = parseInt(currentT.previousElementSibling.lastChild.value);
+        let numberValue = currentT.previousElementSibling.lastChild.value;
+        if (numberValue == '') {
+            alert("個数を入力してください");
+            return;
+        }
+        numberValue = parseInt(numberValue);
         let limitValue = parseInt(currentT.parentElement.parentElement.children[1].innerText);
         let itemid = parseInt(currentT.parentElement.parentElement.parentElement.lastElementChild.innerText);
         //        console.log(numberValue);
