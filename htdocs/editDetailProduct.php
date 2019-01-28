@@ -1,10 +1,24 @@
-<?php
-include('managerHeader.php');
-?>
-    <!-- Start your code here -->
-    <!--<script type="text/javascript" src="getProducts.js"></script>-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MPARS</title>
     <script type="text/javascript" src="js/a_sendProduct.js"></script>
+    <script type="text/javascript" src="js/sendProduct.js"></script>
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Start your code here -->
 
     <!--header部分-->
     <img src="img/logo.jpg" width="125" height="70" align="top">
@@ -41,11 +55,17 @@ include('managerHeader.php');
         <textarea id="description" placeholder="テキストを入力して下さい。(500文字以内)" maxlength="500" cols="50" rows="4" required></textarea>
 
         <br>
-        <input type="submit" value="保存" class="btn btn-primary" onclick="gatDetailProduct()" />&emsp;<input type="button" value="削除" class="btn btn-primary" onclick="Deleteproduct()" />
+        <input type="submit" value="保存" class="btn btn-primary" onclick="sendProduct()" />
+        <!--&emsp;<input type="button" value="削除" class="btn btn-primary" onclick="Deleteproduct()" />-->
 
     </form>
 
     <!-- End your code here -->
-<?php
-include('managerFooter.php');
-?>
+</body>
+
+</html>
+<script type="text/javascript" src="js/getDetailProduct.js"></script>
+<script type="text/javascript">
+    getDetailProduct();
+</script>
+<div id="b"></div>
