@@ -1,6 +1,4 @@
-let breadDiv = $("#breads");
-let sweetsDiv = $("#sweets");
-let drinkDiv = $("#drinks");
+let itemDiv = $("#items");
 let template1 = '<div class="col-md-3"> <a href="review.php"> <div class="card"> <img class="card-top-img img-fluid" src="img/';
 let template2 = '" alt="';
 let template3 = '"> <div class="card-body"> <h4 class="card-title">';
@@ -12,9 +10,8 @@ const addItemInfoToPage = (msg) => {
 	let items = JSON.parse(msg).menu;
     $.each(items, (index, val) => {
 		let card = template1 + val.photo + template2 + val.name + template3;
-		let desclist = val.description.split("===");
-		let title = desclist[0];
-		article = desclist[1];
+		let title = val.name;
+		let article = val.description;
 //        console.dir(val);
         
         let itemid = val.id;
@@ -32,24 +29,12 @@ const addItemInfoToPage = (msg) => {
 		card += title + template4 + article + template5 + starrate + template6 + itemid + template7;
 //        console.log(card);
 
-		switch (val.name) {
-			case "bread":
-			breadDiv.append(card);
-			break;
-			case "sweets":
-			sweetsDiv.append(card);
-			break;
-			case "drink":
-			drinkDiv.append(card);
-			break;
-			default:
-			console.dir(val.name);
-		}
+        itemDiv.append(card);
 	});
 };
 $.ajax({
 	type: 'GET',
-	url: 'http://localhost:8888/data/getProducts.php',
+	url: 'data/getProducts.php',
 	datatype: 'json'
 }).done(addItemInfoToPage);
 

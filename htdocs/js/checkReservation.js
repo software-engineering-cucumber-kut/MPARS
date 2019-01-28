@@ -30,14 +30,19 @@ const addReservationToTable = () => {
             let price = 0;
 //            console.log(res)
             let responce = JSON.parse(res);
-            itemName += responce.description.split("===")[0];
+            itemName += responce.name;
             price += responce.price;
 
 //            console.log(itemName)
+            let amount = val.amount;
+            if (amount == null) {
+                amount = 0;
+            }
+            
             // 新規行追加
             let newRow = '<tr>' +
                 '<td>' + itemName + '</td>' +
-                '<td>' + val.amount + '個</td>' +
+                '<td>' + amount + '個</td>' +
                 '<td>' + price + '円</td>';
 //            console.log(newRow);
             $('#reservationProductsTable').append(newRow);
