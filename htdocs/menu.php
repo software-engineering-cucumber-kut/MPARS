@@ -13,5 +13,5 @@
     <div class="row" id="items">
     </div>
 </div>
-<script src="js/getProducts.js" type="text/javascript"></script>
+<script src="js/getProducts.js?<?php echo date("YmdHis"); ?> " type="text/javascript"></script>
 <?php require('footer.php');?>
