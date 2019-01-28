@@ -1,28 +1,26 @@
 const getDetailProduct = () => {
     $.ajax({
-        type: 'GET',
-        url: 'http://localhost:80/stub/getDetailProduct.php',
-        datatype: 'json'
+        type: 'POST',
+        url: 'data/getDetailProduct.php',
+        datatype: 'json',
+        data: '{"itemid":' + sessionStorage.getItem('itemid') + '}'
     }).done((res) => {
-        //        console.log(res);
+        //console.log(res);
+        //console.log(JSON.parse(res));
         addDetailProduct(JSON.parse(res));
     });
 };
 
 const addDetailProduct = (data) => {
-    let products = data.detailproduct;
+    console.log(data);
+    // 各テキストボックスに追加する文字列
+    var photo_src = "img/" + data.photo;
+    var name = data.name;
+    var price = data.price;
+    var description = data.description;
 
-    // 商品情報を商品編集画面に追加
-    $.each(products, (index, val) => {
-        // 各テキストボックスに追加する文字列
-        //var photo_src = val.src;
-        var name = val.name;
-        var price = val.price;
-        var description = val.description;
-
-        //$('#photo').src(photo_src);
-        $('#name').val(name);
-        $('#price').val(price);
-        $('#description').val(description);
-    });
+    $('#photo').attr('src', photo_src);
+    $('#name').val(name);
+    $('#price').val(price);
+    $('#description').val(description);
 };

@@ -1,7 +1,12 @@
 const sendProduct = () => {
-    // 写真のsrcを取得
-    let imgName = sendImage($('#imgForm')).substr(7);
-    console.log(imgName);
+    let imgName = "";
+    if ($('#imgForm').get(0).lastElementChild.value == "") {
+        imgName = $('#photo')[0].attributes.src.value.substr(4);
+    } else {
+        //写真を送信
+        imgName = sendImage($('#imgForm')).substr(7);
+    }
+    //console.log(imgName);
     let product_json = {photo: imgName, name:$('#name').val() , description: $('#description').val(), price: $('#price').val(), storename:$('#storename').val() };
     let sending_string = JSON.stringify(product_json);
     // $("#b").html(sending_string);
