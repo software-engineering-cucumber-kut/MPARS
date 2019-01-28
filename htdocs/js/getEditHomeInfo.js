@@ -51,3 +51,49 @@ const selectMinutes = (data) => {
   selectOption = selectOption + '</select>分';
   return selectOption;
 }
+
+function previewFile1() {
+    // idがnoimageの要素の取得
+    var preview1 = document.getElementById('photo1');
+    // 選択された画像ファイルの要素の取得
+    // querySelectorでidやclassなどを意識せず要素を取得することができる.files[0]はfilesプロパティの最初の画像ファイルを取得.
+    var file1 = document.querySelector('input[type=file]').files[0];
+    // FileReaderオブジェクトを生成
+    // FileReaderでFileオブジェクトが保有するバッファの中身に読み取りアクセスできる
+    var reader1 = new FileReader();
+
+    // 読み込み成功時に実行されるイベント
+    reader1.addEventListener("load", function () {
+        // データの中身を取得し,previewオブジェクトのsrcに格納
+        // FileReaderで利用可能なresultを使用して画像ファイル読み込み成功後、中身のデータが取得できる
+        preview1.src = reader1.result;
+    }, false);
+
+    if (file1) {
+        // 指定されたFileオブジェクトの読み込み
+        reader1.readAsDataURL(file1);
+    }
+}
+
+function previewFile2() {
+    // idがnoimageの要素の取得
+    var preview2 = document.getElementById('photo2');
+    // 選択された画像ファイルの要素の取得
+    // querySelectorでidやclassなどを意識せず要素を取得することができる.files[0]はfilesプロパティの最初の画像ファイルを取得.
+    var file2 = document.querySelector('input[type=file]').files[1];
+    // FileReaderオブジェクトを生成
+    // FileReaderでFileオブジェクトが保有するバッファの中身に読み取りアクセスできる
+    var reader2 = new FileReader();
+
+    // 読み込み成功時に実行されるイベント
+    reader2.addEventListener("load", function () {
+        // データの中身を取得し,previewオブジェクトのsrcに格納
+        // FileReaderで利用可能なresultを使用して画像ファイル読み込み成功後、中身のデータが取得できる
+        preview2.src = reader2.result;
+    }, false);
+
+    if (file2) {
+        // 指定されたFileオブジェクトの読み込み
+        reader2.readAsDataURL(file2);
+    }
+}
