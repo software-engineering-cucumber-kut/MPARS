@@ -31,7 +31,7 @@
         </div>
 
         <div class="col-sm-8"></div>
-        <div align = "right" class="col-sm-2" style="margin-top:30px">
+        <div align = "right" class="col-sm-2" style="margin-top:15px">
         <u><a href="home.php" style="font-size:30px;" >HOMEへ</a></u>
         </div> 
         <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">--> 

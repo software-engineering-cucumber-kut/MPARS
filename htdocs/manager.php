@@ -10,7 +10,7 @@ include('managerHeader.php');
         <div class="header-img"><img src="img/logo.svg"></div>
         </div>
 
-        <div align = "right" class="col-md-4">
+        <div align = "right" class="col-md-4" style="margin-top:15px;">
         <u><a href="home.php" style="font-size:30px;">ログアウト</a></u>
         </div> 
         <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">--> 
