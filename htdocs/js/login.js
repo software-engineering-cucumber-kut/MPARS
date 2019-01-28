@@ -87,7 +87,6 @@ const Manager_login = () => {
     let login_json = { 
         accountType: "manager",
         id: $('#id').val(),
-        name: "",
         password: $('#password').val()};
     let sending_string = JSON.stringify(login_json);
     /*送信データ確認用 */
