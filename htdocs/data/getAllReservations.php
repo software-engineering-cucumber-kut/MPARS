@@ -10,7 +10,7 @@ if ($userdata == NULL) {
     $userdata = database('SELECT', '* FROM generaluser WHERE id =' . $products[0]["userid"]);
 }
 $userdata = $userdata[0];
-$itemname = preg_split("/===/", $products[0]["description"])[0];
+$itemname = $products[0]["name"];
 echo"\t\t{\n",
     "\t\t\t" . '"received":' . $products[0]["received"] . ",\n",
     "\t\t\t" . '"reservationtime":"' . $products[0]["reservationtime"] . "\",\n",
@@ -23,10 +23,10 @@ echo"\t\t{\n",
     "\t\t\t\t\t" . '"amount":' . $products[0]["amount"] . "\n\t\t\t\t}";
 // DBアクセス結果をforeachで取り出す
 foreach($products as $val) {
-    $itemname = preg_split("/===/", $val["description"])[0];
+    $itemname = $val["name"];
     if ($last_reservationid === $val["reservationid"]) {
         echo",\n\t\t\t\t{\n",
-            "\t\t\t\t\t" . '"itemname":"' . preg_split("/===/", $val["description"])[0] . "\",\n",
+            "\t\t\t\t\t" . '"itemname":"' . $val["name"] . "\",\n",
             "\t\t\t\t\t" . '"amount":' . $val["amount"] . "\n\t\t\t\t}";
         if ($val == end($products)) {
             echo"\n\t\t\t]\n\t\t}\n";
