@@ -49,7 +49,7 @@ const addItemInfoToPage = (msg) => {
 };
 $.ajax({
 	type: 'GET',
-	url: 'http://localhost:8888/data/getProducts.php',
+	url: '/data/getProducts.php',
 	datatype: 'json'
 }).done(addItemInfoToPage);
 
