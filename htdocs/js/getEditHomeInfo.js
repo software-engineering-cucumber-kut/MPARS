@@ -27,11 +27,14 @@ const selectHours = (data) => {
   data = data.slice(0,-6);
   var hours = new Array();
   var selectHour = 24;
-  var selectOption = '<select name="startTime-hours-event"><option value="' + data + '" selected>' + data + '</option>';
+  var selectOption = '<select name="startTime-hours-event">';
   for (var i =0; i < selectHour; i++) {
-    if (i == data) continue;
-    hours[i] = i;
-    selectOption = selectOption + '<option value="' + hours[i] + '">' + hours[i] + '</option>';
+    if (i == data) {
+      selectOption = selectOption + '<option value="' + data + '" selected>' + data + '</option>';
+    } else {
+      hours[i] = i;
+      selectOption = selectOption + '<option value="' + hours[i] + '">' + hours[i] + '</option>';
+    }
   }
   selectOption = selectOption + '</select>時';
   return selectOption;
@@ -42,16 +45,19 @@ const selectMinutes = (data) => {
   data = data.slice(0,-3);
   var minutes = new Array();
   var selectMinute = 60;
-  var selectOption = '<select name="startTime-minutes-event"><option value="' + data + '" selected>' + data + '</option>';
+  var selectOption = '<select name="startTime-minutes-event">';
   for (var i = 0; i < selectMinute; i++) {
-    if (i == data) continue;
-    minutes[i] = i;
-    selectOption = selectOption + '<option value="' + minutes[i] + '">' + minutes[i] + '</option>';
+    if (i == data) {
+      selectOption = selectOption + '<option value="' + data + '" selected>' + data + '</option>';
+    } else {
+      minutes[i] = i;
+      selectOption = selectOption + '<option value="' + minutes[i] + '">' + minutes[i] + '</option>';
+    }
   }
   selectOption = selectOption + '</select>分';
   return selectOption;
 }
-
+/*
 function previewFile1() {
     // idがnoimageの要素の取得
     var preview1 = document.getElementById('photo1');
@@ -97,3 +103,4 @@ function previewFile2() {
         reader2.readAsDataURL(file2);
     }
 }
+*/
