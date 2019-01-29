@@ -60,20 +60,16 @@
                     <h2>Map</h2>
 
                     <div class="input_file1">
-                        <div class="preview1">
-                            <input type="file" id="select_photo1" accept="image/*" onchange="previewFile1()" required>
-                            <br><br>
-                            <img id="photo1" src="img/map.png" width="100%" height="100%">
-                        </div><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.389059239013!2d133.71792716262752!3d33.62018645083091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551fea1a63c66eb%3A0x43b1f9868b20e26c!2z44CSNzgyLTAwMDMg6auY55-l55yM6aaZ576O5biC5Zyf5L2Q5bGx55Sw55S65a6u44OO5Y-jIOWbvemam-S6pOa1geS8mumkqA!5e0!3m2!1sja!2sjp!4v1548747892962" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <h2>Photos</h2>
 
                     <div class="input_file2">
                         <div class="preview2">
-                            <input type="file" id="select_photo2" accept="image/*" onchange="previewFile2()" required>
-                            <br><br>
+                            <!--<input type="file" id="select_photo2" accept="image/*" onchange="previewFile2()" required>
+                            <br><br>-->
                             <img id="photo2" src="img/outside.jpg" width="100%" height="100%">
                         </div>
-                    </div>
+                    </div><br>
                 </div>
             </div>
         </div>
