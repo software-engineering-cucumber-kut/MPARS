@@ -30,9 +30,7 @@ const openReservationWithNewTab = () => {
     window.open("/loginCustomer.php");
 };
 </script>
-<div class="d-flex flex-row">
-<div class="header-img"><img src="img/photo.jpg"><img src="img/photo.jpg"><img src="img/photo.jpg"></div>
-</div>
+<div class="header-img"><img src="img/tree.jpg"><img src="img/out.jpg"><img src="img/item.jpg"></div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom"> <a class="navbar-brand" href="/"> <img class="logo-img header-img" src="img/logo.svg"> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria　expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse menu justify-content-end" id="navbarSupportedContent">
