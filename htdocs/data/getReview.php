@@ -7,7 +7,7 @@
     $json_string = file_get_contents('php://input');
     $json_obj = json_decode($json_string);
 
-    $target = ' * FROM review WHERE itemid = ' . strval($json_obj->itemid);
+    $target = ' * FROM review WHERE itemid = ' . strval($json_obj->itemid) . '  ORDER BY id DESC';
     $reviews = database('SELECT', $target);
 
     for ($i = 0; $i < count($reviews); $i++) {
