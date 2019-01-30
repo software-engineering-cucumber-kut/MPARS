@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="css/compRequest.css">
 <script type="text/javascript">
     const goBuck = () => {
-        location.href = "http://localhost:8888/home.php";
+        location.href = "home.php";
     }
 </script>
 <div class="container-fluid">

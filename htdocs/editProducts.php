@@ -3,6 +3,7 @@ include('managerHeader.php');
 ?>
 <!--<link rel="stylesheet" type="text/css" href="css/menu.css">-->
 <link rel="stylesheet" type="text/css" href="css/editProducts.css">
+<script type="text/javascript">sessionStorage.clear()</script>
 
 <body>
     <!-- Start your code here -->
