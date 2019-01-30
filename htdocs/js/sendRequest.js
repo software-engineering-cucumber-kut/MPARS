@@ -1,12 +1,11 @@
 const sendRequest = () => {
-    let request_json = { contents: $('#request-text').val() };
-    let sending_string = JSON.stringify(request_json);
-    
+    let send_data = {};
+    send_data.contents = $('#request-text').val();
     $.ajax({
+        url: 'data/putRequest.php',
         type: 'POST',
-        url: '/stub/putRequest.php',
         datatype: 'json',
-        data: sending_string
+        data: JSON.stringify(send_data)
     }).done((res) => {
         if (JSON.parse(res).success) {
             location.href = "/compRequest.php";
