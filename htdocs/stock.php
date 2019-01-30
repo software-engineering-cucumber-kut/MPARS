@@ -1,34 +1,38 @@
-<!DOCTYPE html>
-<html lang ="ja">
+<?php
+include('managerHeader.php');
+?>
+<link href="css/manager.css?<?php echo date("YmdHis"); ?>" rel="stylesheet">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MPARS</title>
+<br>
+<div class="container-fluid">
+    <div class="row">
+    <!--グリッドシステムではcol-lg(md,sm,xs)は12段階で画面を分割できる-->
+        <div class="col-md-8">
+        <div class="header-img"><img src="img/logo.svg" width = "140"></div>
+        </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+        <div align = "right" class="col-md-4" style="margin-top:15px;">
+        <u><a href="home.php" style="font-size:30px;">ログアウト</a></u>
+        </div>
+        <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">-->
+    </div>
+    <br>
 
-  <!--jsとcssの読み込み-->
-  <script type="text/javascript" src="js/stock.js"></script>
-  <script type="text/javascript" src="js/sendStock.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/stock.css">
-
-</head>
-
-<body>
+    <div class="row">
+    <div align = "center" class="col-md-12" style="background-color:#8EB8FF;">
+    <h2> <font color="white" face="ＭＳ 明朝" style="font-size:50px;">在庫編集</font> </h2>
+    </div>
+    </div>
   <!--header部分-->
-    <img src="img/logo.jpg" width="125" height="70" align="top">
+    <!--<img src="img/logo.jpg" width="125" height="70" align="top">
     <div align="right"><a href="manager.php">管理者ホームへ</a></div>
     <div class="h1">
       <center>
         <font color="white">在庫編集</font>
       </center>
     </div>
-    <br>
-    <div align="left">在庫編集日<br></div>
+    <br>-->
+    <!--<div align="left">在庫編集日<br></div>-->
 <!--
       &nbsp;
       <a href=>
@@ -45,7 +49,7 @@
       </a>
   </div>-->
 
-  <div class="dateSlide">
+  <!--<div class="dateSlide">
     <ul class="dateSlideList">
         <a href=><li class="date01"></li></a>
         <a href=><li class="date02"></li></a>
@@ -53,47 +57,33 @@
         <a href=><li class="date04"></li></a>
         <a href=><li class="date05"></li></a>
     </ul>
-  </div>
+  </div>-->
 
 <!-- ここに商品の予約上限を決める画面のプログラムを入れる-->
 <div class="container-fluid">
     <br>
     <div class="row text-left">
         <div class="col-md-12">
-            <h4>Bread</h4>
+            <h4>Items</h4>
             <hr>
         </div>
     </div>
     <br>
-    <div class="row" id="breads">
-    </div>
-    <br>
-    <div class="row text-left">
-        <div class="col-md-12">
-            <h4>Sweets</h4>
-            <hr>
-        </div>
-    </div>
-    <br>
-    <div class="row" id="sweets">
-    </div>
-    <br>
-    <div class="row text-left">
-        <div class="col-md-12">
-            <h4>Drink</h4>
-            <hr>
-        </div>
-    </div>
-    <br>
-    <div class="row" id="drinks">
+    <div class="row" id="items">
     </div>
 </div>
 
-  <script type="text/javascript" src="js/getAvailableProducts.js?2"></script>
+  <!--<script type="text/javascript" src="js/getAvailableProducts.js?3"></script>-->
+  <script type="text/javascript" src="js/stock.js"></script>
+  <script type="text/javascript" src="js/sendStock.js"></script>
 
+  <br>
+  <br>
   <center>
-  <input type="button" value="保存" onclick="save()" />
+  <input type="button" value="保存" onclick="sendStock()" />
   </center>
 
-  </body>
-</html>
+
+  <?php
+    include('managerFooter.php');
+  ?>
