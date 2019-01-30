@@ -1,13 +1,14 @@
 <?php
 include('managerHeader.php');
 ?>
-<link href="css/manager.css?<?php echo date("YmdHis"); ?>" rel="stylesheet">
+<link href="css/manager.css?<?php echo date("YmdHis"); ?>" rel="stylesheet"> 
+
 <br>
 <div class="container-fluid">
     <div class="row">
     <!--グリッドシステムではcol-lg(md,sm,xs)は12段階で画面を分割できる-->
         <div class="col-md-8">
-        <div class="header-img"><img src="img/logo.svg"></div>
+        <div class="header-img"><img src="img/logo.svg" width = "140"></div>
         </div>
 
         <div align = "right" class="col-md-4" style="margin-top:15px;">
