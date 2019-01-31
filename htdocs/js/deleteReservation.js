@@ -10,7 +10,8 @@ const deleteReservation = () => {
         if (JSON.parse(res).success) {
             location.href = 'compDeleteReservation.php';
         } else {
-            alert('deletion failed');
+            alert("まだ商品が予約されていません");
+            //alert('deletion failed');    
         }
     });
 }
