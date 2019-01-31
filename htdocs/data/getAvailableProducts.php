@@ -18,7 +18,8 @@
           "\t\t\t" . '"photo":"' . $val["photo"] . "\",\n",
           "\t\t\t" . '"description":"' . $val["description"] . "\",\n",
           "\t\t\t" . '"price":' . $val["price"] . ",\n",
-          "\t\t\t" . '"currentstock":' . ($currentStock - $reservedNum) . ",\n",
+          "\t\t\t" . '"reservedNumber":' . $reservedNum . ",\n",
+          "\t\t\t" . '"currentstock":' . $currentStock . ",\n",
           "\t\t\t" . '"nextstock":' . $nextStock . "\n";
       add($val, $items);
   }
