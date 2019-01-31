@@ -3,6 +3,7 @@ include('managerHeader.php');
 ?>
 <!--<link rel="stylesheet" type="text/css" href="css/menu.css">-->
 <link rel="stylesheet" type="text/css" href="css/editProducts.css">
+
 <script type="text/javascript">sessionStorage.clear()</script>
 
 <body>
@@ -22,14 +23,15 @@ include('managerHeader.php');
         </div> 
         <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">--> 
     </div>
-    <br>
-</div>
+    <br>  
+
     <div class="row">
         <div align = "center" class="col-sm-12" style="background-color:#8EB8FF;">
             <h2> <font color="white" face="ＭＳ 明朝" style="font-size:50px;">メニュー編集</font> </h2>
         </div>
     </div>
     <br>
+</div>
 
     <div class="container-fluid">
         <br>
