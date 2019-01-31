@@ -22,12 +22,13 @@ include('managerHeader.php');
     <br>
 </div>
 
-    <br><br>
     <div class="row">
     <div align = "center" class="col-md-12" style="background-color:#8EB8FF;">
     <h2> <font color="white" face="ＭＳ 明朝" style="font-size:50px;">リクエスト一覧</font> </h2>
     </div>
     </div>
+    
+    <br><br>
 
     <br>
     <div id="requests-body">
