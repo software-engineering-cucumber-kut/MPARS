@@ -12,7 +12,7 @@ include('managerHeader.php');
         </div>
 
         <div align = "right" class="col-md-4" style="margin-top:15px;">
-        <u><a href="home.php" style="font-size:30px;">ログアウト</a></u>
+        <u><a href="manager.php" style="font-size:30px;">管理者ホームへ</a></u>
         </div>
         <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">-->
     </div>

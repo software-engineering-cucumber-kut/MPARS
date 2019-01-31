@@ -16,7 +16,15 @@ include( 'reservationHeader.php' );
         </div> 
         <!--<input type="button" class="managehome_btn" value="管理者ホームへ" style="font-size:30px; color:blue;" id="button1">--> 
     </div>
+    <br>
+
+    <div class="row">
+    <div align = "center" class="col-md-12" style="background-color:#8EB8FF;">
+    <h2> <font color="white" face="ＭＳ 明朝" style="font-size:50px;">予約一覧</font> </h2>
+    </div>
+    </div>
 </div>
+<br>
 <br>
 <div class="container-fluid">
     <div class="row">
