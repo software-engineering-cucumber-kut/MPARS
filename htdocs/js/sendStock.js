@@ -13,20 +13,17 @@ const sendStock = () => {
             });
         }
     });
-    console.log(send_data);
+    //console.log(send_data);
     $.ajax({
         url: 'data/putStock.php',
         type: 'POST',
         datatype: 'json',
         data: JSON.stringify(send_data)
     }).done((res) => {
-        console.log(res);
-        /*
         if (JSON.parse(res).success) {
             location.href = "/stock.php";
         } else {
             console.log("request sending failed");
         }
-        */
     });
 };
