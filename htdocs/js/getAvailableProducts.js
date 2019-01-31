@@ -12,7 +12,7 @@ const addAvailableProduct = (msg) => {
     let availableProduct = JSON.parse(msg).products;
     $.each(availableProduct, (index, val) => {
 
-        if ((val.currentstock - reservedNumber) <= 0) {
+        if ((val.currentstock - val.reservedNumber) <= 0) {
             return true;
         }
 
