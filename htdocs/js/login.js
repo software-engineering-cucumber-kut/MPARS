@@ -41,9 +41,9 @@ const Student_login = () => {
         id: $('#id').val(),
         password: $('#password').val()};
     let sending_string = JSON.stringify(login_json);
-    /*送信データ確認用 */
+    /*送信データ確認用 
     $( '#result' ).html( sending_string );
-
+    */
     $.ajax({
         type: 'POST',
         url: 'data/login.php',
@@ -65,9 +65,9 @@ const General_login = () => {
         name: $('#id').val(),
         password: $('#password').val()};
     let sending_string = JSON.stringify(login_json);
-    /*送信データ確認用 */
+    /*送信データ確認用 
     $( '#result' ).html( sending_string );
-
+    */
     $.ajax({
         type: 'POST',
         url: 'data/login.php',
@@ -89,9 +89,9 @@ const Manager_login = () => {
         id: $('#id').val(),
         password: $('#password').val()};
     let sending_string = JSON.stringify(login_json);
-    /*送信データ確認用 */
+    /*送信データ確認用 
     $( '#result' ).html( sending_string );
-
+    */
     $.ajax({
         type: 'POST',
         url: 'data/login.php',
