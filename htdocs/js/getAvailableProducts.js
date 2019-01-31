@@ -9,10 +9,13 @@ let template7 = '</div> <button type="button" class="btn btn-primary reserve-btn
 let template8 = '</div> </div> </div>';
 
 const addAvailableProduct = (msg) => {
+    //console.log(msg);
     let availableProduct = JSON.parse(msg).products;
     $.each(availableProduct, (index, val) => {
 
-        if ((val.currentstock - val.reservedNumber) <= 0) {
+        let limitnumber = val.currentstock - val.reservedNumber;
+        //console.log(limitnumber);
+        if ((limitnumber) <= 0) {
             return true;
         }
 
@@ -24,7 +27,7 @@ const addAvailableProduct = (msg) => {
 
         let itemid = val.id;
 
-        card += title + template4 + "￥" + val.price + template5 + val.currentstock + template6 + template7 + itemid + template8;
+        card += title + template4 + "￥" + val.price + template5 + limitnumber + template6 + template7 + itemid + template8;
         //        console.log(card);
 
         itemDiv.append(card);
