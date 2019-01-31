@@ -16,7 +16,7 @@
 <!-- global menu -->
 <div class="d-flex flex-row">
 <div class="header-img">
-  <img src="img/logo.jpg">
+  <img src="img/logo.jpg" width="140">
 </div>
 </div>
 <div align="right"><a href="manager.php">管理者ホームへ</a></div>
