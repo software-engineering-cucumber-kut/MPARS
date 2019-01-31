@@ -14,11 +14,11 @@ const addEditHomeInfo = (data) => {
     let events = data.event;
     let shopinfos = data.shopinfo;
     $.each(events, (index, val) => {
-      var eventCard = '店名<input type="text" name="name-event-info-textarea" size="20" maxlength="10" value="' + val.storename + '"></input><br>日付<input type="date" name="event-calendar" max="9999-12-31" value="' + val.date + '"><br>時間' + selectHours(val.open) + selectMinutes(val.open) + '-' + selectHours(val.close) + selectMinutes(val.close) + '<br><br>';
+      var eventCard = '<hidden id="event-id">' + val.id + '</hidden><br>店名<input id="edit-name"  type="text" name="name-event-info-textarea" size="20" maxlength="10" value="' + val.storename + '"></input><br>日付<input id="edit-date" type="date" name="event-calendar" max="9999-12-31" value="' + val.date + '"><br>時間' + selectHours(val.open) + selectMinutes(val.open) + '-' + selectHours(val.close) + selectMinutes(val.close) + '<br><br>';
       $('#event-info-body').append(eventCard);
     });
     $.each(shopinfos, (index, val) => {
-      var shopInfoCard = '店名<input type="text" name="name-contact-textarea" size="20" maxlength="10" value="' + val.name + '"></input><br>住所<input type="text" name="adress-contact-textarea" size="60" maxlength="30" value="' + val.address + '"></input><br>電話番号<input type="text" name="phone-contact-textarea" size="22" maxlength="11" value="' + val.phonenumber + '"></input><br>営業曜日<input type="text" name="day-contact-textarea" size="14" maxlength="7" value="' + val.businessday + '"></input><br>営業時間' + selectHours(val.open) + selectMinutes(val.open) + '-' + selectHours(val.close) + selectMinutes(val.close) + '<br><br>';
+      var shopInfoCard = '店名<input id="shop-name" type="text" name="name-contact-textarea" size="20" maxlength="10" value="' + val.name + '"></input><br>住所<input id="shop-address" type="text" name="adress-contact-textarea" size="60" maxlength="30" value="' + val.address + '"></input><br>電話番号<input id="shop-phonenumber" type="text" name="phone-contact-textarea" size="22" maxlength="11" value="' + val.phonenumber + '"></input><br>営業曜日<input id="shop-businessday" type="text" name="day-contact-textarea" size="14" maxlength="7" value="' + val.businessday + '"></input><br>営業時間<a id="edit-open-hour">' + selectHours(val.open) + '</a><a id="edit-open-minute">' + selectMinutes(val.open) + '</a>-<a id="edit-close-hour">' + selectHours(val.close) + '</a><a id="edit-close-minute">' + selectMinutes(val.close) + '</a><br><br>';
       $('#contact-info-body').append(shopInfoCard);
     });
 };
