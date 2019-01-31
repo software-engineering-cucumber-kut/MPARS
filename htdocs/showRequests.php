@@ -11,7 +11,7 @@ include('managerHeader.php');
     <!--グリッドシステムではcol-lg(md,sm,xs)は12段階で画面を分割できる-->
         <div class="col-md-4">
         <div class="d-flex">
-        <div class="header-img"><img src="/img/logo.svg" ></div>
+        <div class="header-img"><img src="/img/logo.svg" width="140"></div>
         </div>
         </div>
 

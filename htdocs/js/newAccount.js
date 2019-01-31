@@ -41,7 +41,9 @@ const student_newAccount = () => {
     }
 
     let sending_string = JSON.stringify(newAccount_json);
+    /*チェック用の項目
     $( '#result' ).html(sending_string);
+    */
     $.ajax({
         type: 'POST',
         url: 'data/putCustomer.php',
@@ -71,8 +73,9 @@ const general_newAccount = () => {
     }
 
     let sending_string = JSON.stringify(newAccount_json);
+    /*チェック用の項目
     $( '#sresult' ).html( sending_string );
-
+    */
     $.ajax({
         type: 'POST',
         url: 'data/putCustomer.php',
