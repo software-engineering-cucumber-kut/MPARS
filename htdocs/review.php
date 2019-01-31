@@ -101,10 +101,10 @@
                     </div>
                     <div class="modal-footer">
 
-                        <a href="https://twitter.com/?lang=ja" target="_blank"><img src="Twitter%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg" alt="twitter" height="100" width="100"></a>
+                        <a href="https://twitter.com/?lang=ja" target="_blank"><img src="/img/Twitter%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg" alt="twitter" height="100" width="100"></a>
                         <!-- target="_blank" 新規タブで開く-->
-                        <a href="https://ja-jp.facebook.com/" target="_blank"><img src="facebook.jpg" alt="facebook" height="90" width="90"></a>
-                        <a href="https://line.me/ja/" target="_blank"><img src="LINE.jpg" alt="LINE" height="100" width="100"></a>
+                        <a href="https://ja-jp.facebook.com/" target="_blank"><img src="/img/facebook.jpg" alt="facebook" height="90" width="90"></a>
+                        <a href="https://line.me/ja/" target="_blank"><img src="/img/LINE.jpg" alt="LINE" height="100" width="100"></a>
                     </div>
                 </div>
             </div>
