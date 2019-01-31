@@ -11,6 +11,7 @@ const sendRequest = () => {
             location.href = "/compRequest.php";
         } else {
             console.log("request sending failed");
+            alert("failed");
         }
     });
 };
