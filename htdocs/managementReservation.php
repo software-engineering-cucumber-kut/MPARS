@@ -3,7 +3,7 @@ include('reservationHeader.php');
 ?>
   <!--jsとcssの読み込み-->
   <script type="text/javascript" src="js/managementReservation.js"></script>
-  <script type="text/javascript" src="js/deleteReservation.js"></script>
+  <script type="text/javascript" src="js/deleteReservation.js?"></script>
   <link rel="stylesheet" type="text/css" href="css/managementReservation.css">
 <br>
 <div class="container-fluid" >
