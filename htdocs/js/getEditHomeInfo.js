@@ -30,7 +30,7 @@ const selectHours = (data) => {
   var selectOption = '<select name="startTime-hours-event">';
   for (var i =0; i < selectHour; i++) {
     if (i == data) {
-      selectOption = selectOption + '<option value="' + data + '" selected>' + data + '</option>';
+      selectOption = selectOption + '<option value="' + data + '" selected>' + i + '</option>';
     } else {
       hours[i] = i;
       selectOption = selectOption + '<option value="' + hours[i] + '">' + hours[i] + '</option>';
@@ -48,7 +48,7 @@ const selectMinutes = (data) => {
   var selectOption = '<select name="startTime-minutes-event">';
   for (var i = 0; i < selectMinute; i++) {
     if (i == data) {
-      selectOption = selectOption + '<option value="' + data + '" selected>' + data + '</option>';
+      selectOption = selectOption + '<option value="' + data + '" selected>' + i + '</option>';
     } else {
       minutes[i] = i;
       selectOption = selectOption + '<option value="' + minutes[i] + '">' + minutes[i] + '</option>';
